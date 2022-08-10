@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-for-defenders"
+version = "0.1.0"
+description = "Code for the course on The Taggart Institute"
+authors = ["Michael Taggart <mtaggart@taggart-tech.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyterlab = "^3.4.4"
+ipywidgets = "^7.7.1"
+plotly = "^5.9.0"
+pandas = "^1.4.3"
+jupyter-dash = "^0.4.2"
+jupyter = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
