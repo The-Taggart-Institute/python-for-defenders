@@ -1408,7 +1408,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "3452059c9b2e1b86d4406b32373311ee3a0db279151c639f058ab686a32e3e0f"
+content-hash = "9884bbab599d337c1c02fd166c5b1585dda7463a1354ed0f62bdd3526fd4e900"
 
 [metadata.files]
 ansi2html = []
@@ -1446,10 +1446,7 @@ executing = []
 fastjsonschema = []
 flask = []
 flask-compress = []
-idna = [
-    {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
-    {file = "idna-3.3.tar.gz", hash = "sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"},
-]
+idna = []
 importlib-metadata = []
 importlib-resources = []
 ipykernel = []
