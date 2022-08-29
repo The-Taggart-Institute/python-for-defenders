@@ -493,6 +493,17 @@ MarkupSafe = ">=2.0"
 i18n = ["Babel (>=2.7)"]
 
 [[package]]
+name = "jldracula"
+version = "0.1.0"
+description = "Jupter Lab Dracula Theme"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+jupyterlab = ">=3.0.0,<4.0.0"
+
+[[package]]
 name = "json5"
 version = "0.9.9"
 description = "A Python implementation of the JSON5 data format."
@@ -1397,7 +1408,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "e0cd60d142d93fcef61398d072f0a4b047814e5039a2762bbf1f56dee6ff331d"
+content-hash = "3452059c9b2e1b86d4406b32373311ee3a0db279151c639f058ab686a32e3e0f"
 
 [metadata.files]
 ansi2html = []
@@ -1451,6 +1462,7 @@ ipywidgets = []
 itsdangerous = []
 jedi = []
 jinja2 = []
+jldracula = []
 json5 = []
 jsonschema = []
 jupyter = []

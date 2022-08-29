@@ -12,6 +12,7 @@ plotly = "^5.9.0"
 pandas = "^1.4.3"
 jupyter-dash = "^0.4.2"
 jupyter = "^1.0.0"
+JLDracula = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
 
