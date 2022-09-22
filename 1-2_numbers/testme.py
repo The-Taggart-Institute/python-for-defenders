@@ -7,7 +7,7 @@ def testme_1(data):
 
 def testme_2(x, y):
     print("[+] Testing for modiness...")
-    if x & y == 5:
+    if x % y == 5:
         print(f"[+] Success! {x} % {y} is 5!")
     else:
         print(f"[!] Hmm, {x} % {y} does not yield a remainder of 5...")
