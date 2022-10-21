@@ -29,7 +29,7 @@ def testme():
         
     print("[+] Making domain indicator")
     try:
-        bad_domain = IPv4Indicator("evil.com")
+        bad_domain = DomainIndicator("evil.com")
         print(f"[+] {bad_ip.defang()}")
     except:
         print("[!] Couldn't make/defang domain indicator!")
