@@ -21,7 +21,7 @@ accounts = {acct_users[i]:acct_pws[i] for i in range(NUM_ACCTS)}
 # Build cred dump
 account_samples = sample(acct_users, round(NUM_ACCTS * PCT_CORRECT))
 dump_users = sample(names, NUM_DUMPS) + account_samples
-dump_pws = sample(names, NUM_DUMPS) + [accounts[p] for p in account_samples]
+dump_pws = sample(pws, NUM_DUMPS) + [accounts[p] for p in account_samples]
 cred_dump = list(zip(dump_users, dump_pws))
 shuffle(cred_dump)
 
