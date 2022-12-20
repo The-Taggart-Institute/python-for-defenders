@@ -39,7 +39,7 @@ def testme_1(valid_users):
         if sorted(valid_users) == sorted(real_users):
             print("[+] Valid users matched!")
         else:
-            print("[-] Valid users do not match!1")
+            print("[-] Valid users do not match!")
     except Error as e:
         print(e)
 
