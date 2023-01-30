@@ -28,7 +28,7 @@ shuffle(cred_dump)
 def authenticate(username, password) -> (bool, str):
     if username in accounts:
         if password == accounts[username]:
-            return (True, "")
+            return (True, None)
         return (False, "Password is incorrect")
     return (False, "Username does not exist")
 
