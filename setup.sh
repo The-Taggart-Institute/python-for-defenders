@@ -3,13 +3,14 @@
 echo "[+] Installing dependencies"
 
 sudo apt update
-sudo apt install -y python3-pip python3-venv
+sudo apt install -y python3-pip python3-venv pipx
 
 echo "[+] Installing Poetry"
 
-curl -sSL https://install.python-poetry.org | python3 -
+pipx install poetry
+pipx ensurepath
 
 echo "[+] Installing Poetry Dependencies"
-poetry install
+~/.local/bin/poetry install
 
-echo "[+] Done! Run 'poetry shell' to activate the environment"
+echo "[+] Done! Run 'poetry env activate' and the command provided afterward to activate the environment. Deactivate with 'deactivate.'"
