@@ -1,0 +1,155 @@
+hello i'm michael taggart and welcome to
+python for defenders part one
+you may be wondering why defenders or
+people on the defensive side of cyber
+security need a specialized course on
+the python programming language
+unfortunately even today python
+programming is not a common skill set
+amongst most offenders this lack of
+capability means that many defensive
+teams are not as efficient or effective
+as they could be and so i would like to
+share my knowledge as a python developer
+and a defender to help those teams out
+so the purpose of this course is first
+to introduce everybody to the python
+programming language by way of jupiter
+notebooks which we'll cover shortly
+once we're through the basics of
+understanding python and jupiter we are
+going to build defensive tools and
+useful automations with python and
+jupiter to create repeatable processes
+that a defensive team can use
+one of the neat things about jupiter
+notebooks is that the procedure and the
+documentation are the exact same thing
+and so we're going to learn how to build
+out an infrastructure that
+self-documents using these notebooks
+and then finally using some of the tools
+of data science we're going to
+create tools and demonstrate how to use
+specific data science techniques
+to
+multiply
+our defensive and detective capabilities
+with python the course is split into two
+parts in the first part we're going to
+go over the basics of python programming
+so if you've never written any python
+before don't worry we're going to teach
+you the basic structures of code and
+python specifically and then we're going
+to use it inside the context of jupyter
+notebooks so if you've never used
+jupiter before that's also fine this is
+a complete introduction to both of those
+then in part two we're going to apply
+what we've learned in part one to create
+real defensive tools inside of jupiter
+including
+basic data science techniques parsing
+raw data creating notebooks that are
+repeatable processes we're going to
+interact via api with external data
+sources we're going to create
+visualizations and reports of our
+findings so that we can use
+these tools again and again in our
+defensive teams
+broadly our understanding objectives are
+how and why to use jupyter notebooks the
+benefits of what's known as literate
+programming which we're going to cover
+shortly
+how to create documentation that is
+itself a procedure
+and how to institute notebooks in an
+organization for maximum effectiveness
+there are some
+loose prerequisites for the course that
+i recommend first if you've ever done
+any programming in any language before
+that's going to be helpful but as i said
+we will be doing a complete intro to
+python so if you haven't done that don't
+worry i think you'll still be able to
+follow along an understanding of basic
+defensive security topics at the level
+of for example a security analyst
+will be helpful for some of what we're
+doing and that will include some
+networking concepts as well also for a
+lot of what we'll do familiarity with
+the linux command line will be extremely
+valuable for you and there's some good
+news there we actually have a course
+exactly for that and it's free
+in terms of course materials
+you're going to need a linux virtual
+machine with a web browser and a
+terminal it doesn't have to be
+particularly powerful although you may
+want to give it as much as eight gigs of
+ram we have a taggart institute virtual
+application that you may want to
+consider and we'll link that in the text
+below you can use that inside a virtual
+box to get up and running quickly
+you may be asking who this guy is and
+why you should be listening to him about
+this topic so my name is michael taggart
+i'm a senior cyber security researcher
+and i've been doing it and python
+programming for over a decade and i've
+been doing information security for the
+last three and a half years
+i am a defensive professional and i use
+this specific procedure inside of my
+team so i eat my own dog food and as i
+said i am a python developer i've been
+writing python for a long time it was my
+first programming language and i still
+love it a lot
+our course structure other than being
+split into two parts is going to consist
+of lectures labs checks for
+understanding exhibition of mastery and
+of course our community what are all
+those so the lectures are going to be
+the videos that you're watching right
+now that's where you're receiving
+information there are also going to be
+labs in the form of jupiter notebooks
+that walk you through the concepts that
+we've explored inside of the videos so
+you can practice yourself
+in most of those notebooks there are
+going to be sections that are checks for
+understanding where you're going to be
+expected to write your own code and run
+it against built-in tests inside of the
+notebook to see if you've succeeded
+finally the course is going to end with
+an exhibition of mastery that is a
+holistic demonstration that you've
+internalized these skills and
+understandings
+we'll cover the exact shape of that
+exhibition later when we get to the end
+of the course but know that there's
+going to be some sort of capstone to
+demonstrate to yourself that you've
+learned what you set out to learn and
+then finally our discord community is
+vibrant active inclusive and supportive
+and i strongly recommend that if you
+haven't joined that discord already you
+do so to get the most out of this course
+and our community with that again want
+to welcome you to python for defenders
+up next we're going to talk about why
+jupiter notebooks are so cool and why
+we're using them in this context
