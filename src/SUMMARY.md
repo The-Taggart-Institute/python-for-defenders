@@ -1,6 +1,8 @@
+
+[About Python For Defenders](README.md)
+
 # 0: Welcome
 
-- [0-0: Python For Defenders](README.md)
 - [0-1: Welcome and Introduction](0-1_welcome.md)
 - [0-2: Do I Need to Learn to Code?](0-2_do-i-need-to-learn-to-code.md)
 - [0-3: Why Notebooks?](0-3_why-notebooks.md)
@@ -55,3 +57,4 @@
 - [6-2: Advanced Visualization](6-2_advanced_visualization.md)
 - [6-3: Marimo](6-3_marimo.md)
 
+[Exhibition of Mastery](exhibition-of-mastery.md)
