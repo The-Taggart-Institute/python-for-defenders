@@ -55,3 +55,7 @@ There's one less common operation you should know about: modulo.
 The modulo operation yields the remainder of integer division. For example, `10 % 7` yields `3`, because 10 divided by 7 in integer division (think long division) is 1, remainder 3.
 
 That remainder is more handy than you might think! For example, it's common to check for evenness or oddness of a value using modulo. `n % 2` will *always* yield `0` for an even number and always `1` for odd.
+
+## Order of Operations
+
+Good ol' [PEMDAS](https://en.wikipedia.org/wiki/Order_of_operations#Mnemonics) is respected in Python math expressions. But parentheses matter—both to the code and to human readers, so please don't forget them!
