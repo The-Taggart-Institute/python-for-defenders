@@ -97,6 +97,38 @@ print(5+5)
 print(2*2)
 ```
 
+## Variables
+
+In Python, like all programming languages, we can store values for later use under named buckets called **variables**. Different values have different data types, as we'll soon see. But I want you to be familiar with the idea of variables right away, and that _cells share variable values_.
+
+Create a new cell and run the following expression:
+
+```python
+x = 5
+```
+
+Then in a new cell, simply ask for `x`
+
+```python
+x
+```
+
+![variables](img/1-1_variables.png)
+
+Two important discoveries here. First, we **assign a value to a variable** with the `=` operator. A *single* equals sign. It might seem weird that I'm specifying one, but it will matter later. Second, we've demonstrated that variable values persist across cells. However, execution order matters. I can't declare a variable in a cell that executes *after* one in which I reference it.
+
+But if I decide I need a variable, I can make the cell and then reorder the cells in my notebook.
+
+### Type Hints
+
+In the associated notebook, you'll see **type hint** notation like:
+
+```python
+message: str = "Hello, World!"
+```
+
+The `: str` component is the type hint. As we just saw with `x = 5` above, they're not required. However, they are good practice in Python. Not only do type hints tell other programmers what data type you intend a variable to be, but many developer tools like **linters** (automated processes that review your code) will detect violations of type hints. Python itself won't, but the linter will.
+
 ## Moving/Deleting Cells
 
 Cells are independent entities, even if they can produce objects in the kernel that other cells can reference. You can reorder cells by clicking and dragging to the left of the code/text. You can also delete cells with `DD` when a cell is selected, or right-clicking on the cell.
