@@ -129,6 +129,29 @@ message: str = "Hello, World!"
 
 The `: str` component is the type hint. As we just saw with `x = 5` above, they're not required. However, they are good practice in Python. Not only do type hints tell other programmers what data type you intend a variable to be, but many developer tools like **linters** (automated processes that review your code) will detect violations of type hints. Python itself won't, but the linter will.
 
+"Wait, why won't Python catch it?"
+
+Python is a **dynamically typed** language, meaning that variables can change times. Try this a cell:
+
+```python
+x = 5
+x = "five"
+x
+# => 'five'
+```
+
+Python doesn't care at all that you changed data types. Try it again with type hints!
+
+ b
+```python
+x: int = 5
+x: str = "five"
+x
+# => 'five'
+```
+
+No errors! While 
+
 ## Moving/Deleting Cells
 
 Cells are independent entities, even if they can produce objects in the kernel that other cells can reference. You can reorder cells by clicking and dragging to the left of the code/text. You can also delete cells with `DD` when a cell is selected, or right-clicking on the cell.
