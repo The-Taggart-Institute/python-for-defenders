@@ -56,6 +56,18 @@ x_men
 # => ['Cyclops', 'Jean Grey', 'Professor X', 'Gambit', 'Wolverine', 'Beast', 'Rogue'
 ```
 
+## Checking Membership
+
+We commonly want to know whether a certain value is in a list. Python has the `in` operator for just such an occasion. We build `in` expressions like using other comparisons, with the element we're checking on the left and the list on the right.
+
+```python
+"Cyclops" in x_men
+# => True
+```
+
+> [!NOTE]
+> The `in` operator works with all sequences—including strings!
+
 ### Removing Stuff
 
 The `.pop()` method removes the last item from a list and returns it. The return means the value is made available for assigning to a variable.
