@@ -119,6 +119,8 @@ Two important discoveries here. First, we **assign a value to a variable** with 
 
 But if I decide I need a variable, I can make the cell and then reorder the cells in my notebook.
 
+Variables are one of the **4 Fundamentals of Programming**. We'll see more of them as we go on. These are language components that all (or nearly all) programming languages share.
+
 ### Type Hints
 
 In the associated notebook, you'll see **type hint** notation like:
