@@ -1,7 +1,5 @@
 # 1-1: Cells
 
-**Related Notebook:** `1-1_cells.ipynb`
-
 <iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/rjfL7YN0tyQ?si=6AFPvkmP-s-k-tOe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Welcome to Jupyter! We're going to get familiar with the interface, then cover the basic unit of computing in Jupyter: cells.
@@ -144,7 +142,6 @@ x
 
 Python doesn't care at all that you changed data types. Try it again with type hints!
 
- b
 ```python
 x: int = 5
 x: str = "five"
@@ -152,7 +149,7 @@ x
 # => 'five'
 ```
 
-No errors! While 
+No errors! While the type hints don't match, Python won't stop you. They're hints, not guardrails.
 
 ## Moving/Deleting Cells
 
