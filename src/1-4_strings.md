@@ -1,7 +1,5 @@
 # 1-4: Strings
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/iqRQokcGEe4?si=ATkScm2lsTLZYm5x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 We've technically already seen this data type, since we wrote `"Hello, World!"`. Strings (`str`) are Python's primary representation of text.
 
 ```python

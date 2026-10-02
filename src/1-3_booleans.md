@@ -1,9 +1,5 @@
 # 1-3: Booleans
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/QBD5H64JNQs?si=nwmlmVszwi4GuIQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-**Related Notebook:** `1-3_booleans.ipynb`
-
 Our next data type is simple, but crucial. The `bool` type represents boolean values: either `True` or `False`.
 
 > [!NOTE]

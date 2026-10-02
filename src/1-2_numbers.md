@@ -1,9 +1,5 @@
 # 1-2: Numbers
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/kmqfUvTkfBw?si=lE5IAlzGOjdhAorq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-**Related Notebook:** `1-2_numbers.ipynb`
-
 This is a quick one, but contains some important core concepts.
 
 ## Data Types
@@ -14,7 +10,10 @@ All values in a programming language are of a certain **data type**. These types
 
 Let's try that with the number 3.
 
-![type 3](img/1-2_type.png)
+```python
+type(3)
+# => int
+```
 
 `type(3)` yields type `int`. It's an integer, also known as a whole number. That's distinct from the other kind of number in Python, a `float`. In a new cell, try:
 
@@ -23,8 +22,6 @@ type(3.3)
 ```
 
 You get `float`. These are "floating-point" numbers, also known as number with a decimal point in it, and some degree of precision. But be careful: `float`s do not have perfect precision. Check this out.
-
-![precision](img/1-2_precision.png)
 
 This is a division operation. 10 divided by 3 is, of course, an irrational number. You might recall that the actual value should be 3.333..., with no end of 3s. Well, floating point numbers need to lop it off somewhere, and doing so has unexpected results at the tail end of its precision.
 

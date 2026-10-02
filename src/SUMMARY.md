@@ -10,7 +10,7 @@
 
 # 1: Python Basics
 
-- [1-1: Cells](1-1_cells.md)
+- [1-1: Cells and Variables](1-1_cells.md)
 - [1-2: Numbers](1-2_numbers.md)
 - [1-3: Booleans](1-3_booleans.md)
 - [1-4: Strings](1-4_strings.md)

@@ -1,8 +1,5 @@
 # 1-6: Dictionaries
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/l-hr51FZeW0?si=oUVOPZtpVkzUHJaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
 Let's get this out of the way now: the Python data type we're discussing is referred to as `dict` in code. But the full term is [officially](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) "dictionary." Besides, "dict" is...not a great out-loud word. So in here, it's a **dictionary**.
 
 And in truth, the data type *is* a dictionary: the point is to look things up by a point of reference. Except instead of alphabetical order, we can cut right to the thing we're looking for. It's like a dictionary with every word easily bookmarked.

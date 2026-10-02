@@ -1,7 +1,5 @@
 # 1-5: Lists and Tuples
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/NtkNuL1gqgY?si=FMz3DV8b-fQ8SGk-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 More sequences! As we mentioned before, strings are one example of a larger class of data types in Python called sequences. We'll have to revisit one of the core characteristics of sequences in a later chapter, but we can introduce two more sequence types.
 
 ## Lists

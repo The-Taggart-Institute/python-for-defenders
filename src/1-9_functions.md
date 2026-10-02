@@ -1,7 +1,5 @@
 # 1-9: Functions
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/Y64iCkhKLaQ?si=Pas6x1oTJZF8IgXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 We've arrived at the last of the **4 Fundamental Structures of Programming**, and probably my favorite. **Functions** can be thought of as mini programs within the larger program that we can execute on demand. Anytime we have a task that must be repeated in a program, there's an opportunity to make a function.
 
 ## Basic Syntax
@@ -67,7 +65,7 @@ In the `greet()` function, we have two parameters which are **positional**. We h
 
 ```python
 def greet(name: str, punctuation: str = "."):
-  print(f"{Hello}, {name}{punctuation}")
+  print(f"Hello, {name}{punctuation}")
 
 greet("Alice")
 greet("Bob", punctuation="!!")
@@ -84,9 +82,9 @@ Naming parameters has an interesting side-effect. If, after our parameters witho
 ```python
 def greet(name: str, punctuation: str = ".", friendly: bool = False):
   if friendly:
-    print(f"{Hello}, {name}{punctuation} It's nice to see you{punctuation}")
+    print(f"Hello, {name}{punctuation} It's nice to see you{punctuation}")
   else:
-    print(f"{Hello}, {name}{punctuation}")
+    print(f"Hello, {name}{punctuation}")
 
 greet("Alice")
 greet("Bob", friendly=True)
@@ -103,7 +101,7 @@ Notice I didn't have to provide an argument for `punctuation`; I could just skip
 
 ## Returning Values
 
-Up until now, we've been using functions incorrectly. Our `greet()` function has been calling `print()` to generate output, but this short-circuits the intended usage of a function. Functions have a dedicated keyword: `return`, that sends a value back from the function. `return` ends function execution and sends the program back to the function call location. If we want to assign a value to a variable as a result of a function call, or really do anything else with the result of a function, the function *must* return a value.
+Up until now, we've been using functions incorrectly. Our `greet()` function has been calling `print()` to generate output, but this short-circuits the intended usage of a function. Functions have a dedicated keyword, `return`, that sends a value back from the function. `return` ends function execution and sends the program back to the function call location. If we want to assign a value to a variable as a result of a function call, or really do anything else with the result of a function, the function *must* return a value.
 
 Printing or any other operation inside the function that produces a change not represented in the return values is known as a **side effect**. We do not like side effects. Our functions' operations should be clear and predictable based on the function signature (parameters and return type).
 
@@ -112,9 +110,9 @@ Let's rewrite `greet()` to properly return a value.
 ```python
 def greet(name: str, punctuation: str = ".", friendly: bool = False) -> str:
   if friendly:
-    return f"{Hello}, {name}{punctuation} It's nice to see you{punctuation}"
+    return f"Hello, {name}{punctuation} It's nice to see you{punctuation}"
   else:
-    return f"{Hello}, {name}{punctuation}"
+    return f"Hello, {name}{punctuation}"
 
 greet("Alice")
 # => 'Hello, Alice.'
@@ -170,7 +168,7 @@ def spongebob(msg: str) -> str:
   return result
 ```
 
-What a fun demo function! We have a `for` loop in there, a conditional, and two string methods. This pattern of building a `result` over a loop and returning is one to get comfortable with. Also note we're taking advantage of `enumerate` to get the index and the value of each character in `msg` at the same time.
+What a fun demo function! We have a `for` loop in there, a conditional, and two string methods. This pattern of building a `result` over a loop and returning is one to get comfortable with. Also note we're taking advantage of `enumerate()` to get the index and the value of each character in `msg` at the same time.
 
 If we want to SpongeBobify a greeting, we can wrap the call to `greet()` in a call to `spongebob()`.
 
@@ -179,3 +177,12 @@ spongebob(greet("Alice"))
 
 # => 'hI, aLiCe.'
 ```
+
+## Check for Understanding
+
+Time to write your own function. Remember the password policy from 1-7? Let's functionalize it.
+
+### Objectives
+
+1. Write a function called `valid_password()` that takes a single `str` argument and validates it against our password policy. If the password is valid, the function returns `True`. If it fails, it returns `False`.
+2. Send the policy function (without parens) to `testme()`. Yes, you can pass functions as arguments!

@@ -1,13 +1,11 @@
 # 1-10: Classes
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/xp55bwUUwpI?si=AMjm18-l_RUX9rTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 > [!WARNING]
 > This is going to be a long one. Get a drink or a snack before getting started.
 
-We've just explored building functions, and how to put them together. That can be a wonderfully elegant way to build programs, slowly changing information from one shape to another until we arrive at our destination. But that isn't always the easiest way to think about problems. We're humans, not data pipelines. We think about **things**. We can reason that way in Python too.
+We've just explored building functions and how to put them together. That can be a wonderfully elegant way to build programs, slowly changing information from one shape to another until we arrive at our destination. But that isn't always the easiest way to think about problems. We're humans, not data pipelines. We think about **things**. We can reason that way in Python too.
 
-Python is an object-oriented program. "Object" has a specific meaning in here. It refers to data structures defined by a specification known as a **class**. Think of a class as a blueprint for that contain both **properties** and **methods**. Properties are characteristics, attributes that are common to a certain kind of structure, but whose values may be unique for a specific **instance**. Methods are functions attached to that object that take usually make use of the object's specific property values.
+Python is an **object-oriented** language. "Object" has a specific meaning in here. It refers to data structures defined by a specification known as a **class**. Think of a class as a blueprint for that contain both **properties** and **methods**. Properties are characteristics, attributes that are common to a certain kind of structure, but whose values may be unique for a specific **instance**. Methods are functions attached to that object that take usually make use of the object's specific property values.
 
 ## Syntax
 
@@ -38,6 +36,8 @@ alice = User("alice", "password123")
 alice
 # => <__main__.User at 0x7f23f7eb3d90>
 ```
+
+## Properties
 
 Asking for the value of `alice` doesn't tell us much. Luckily, we can access the object's properties.
 
@@ -77,7 +77,7 @@ alice.reset_password()
 ```
 
 > [!NOTE]
-> Yes, I know the function we just wrote doesn't return anything. Sometimes "getters" and "setters" will only make internal changes to the object
+> Yes, I know the function we just wrote doesn't return anything. Sometimes "getters" and "setters" will only make internal changes to the object.
 
 This is a fairly contrived example, but now you see how we define and call methods on objects.
 
@@ -85,11 +85,23 @@ This is a fairly contrived example, but now you see how we define and call metho
 
 You know, that format string we used earlier was pretty handy. It'd be nice if that was what we got when we asked Python to `print()` our `User`s. That's doable! We simply need to define (and override) the `__str__()` magic method. That method, which is secretly already attached to our object (we'll understand how shortly), determines what `print()` produces.
 
-Let's go back and once more redefine our `User` class with the following addition:
+Let's go back and once more redefine our `User` class a `__str__()` magic method.
 
 ```python
 class User:
-  # ...
+
+  def __init__(self, username: str, password: str):
+    self.username = username
+    self.password = password
+
+  def reset_password(self):
+    new_pass: str = input("New password:")
+    new_pass_confirm: str = input("Confirm new password:")
+    if new_pass == new_pass_confirm:
+      self.password = new_pass
+    else:
+      print("Passwords don't match")
+      
   def __str__(self):
     return f"{self.username}: {self.password}"
 ```
@@ -97,6 +109,7 @@ class User:
 Recreate the `alice` object and try to print it out.
 
 ```python
+alice = User("alice", "password123")
 print(alice)
 # => alice: password123
 ```
@@ -105,6 +118,7 @@ Much nicer.
 
 > [!NOTE]
 > Try the `__dict__()` method. What does it do? Is that useful?
+> And what about `int`s? Do they have magic methods?
 
 ## Docstrings
 
@@ -174,7 +188,7 @@ class User:
     def __str__(self):
       return f"""ID: {self.id}
 Username: {self.username}
-Password: {self.password}""""
+Password: {self.password}"""
 
     # Rest as before...
 
@@ -184,7 +198,7 @@ So we've added `last_id` to the `User` class itself. When `__init__()` runs, it 
 
 While we were making changes, I went ahead and added the `id` value to the string representation of the object. Notice that I used a multiline string, making a nice clean output for out information.
 
-Try it out: make two users and see how they look.
+Try it out. Make two users and see how they look.
 
 ```python
 alice = User("alice", "password123")
@@ -241,7 +255,7 @@ class User:
     3. No spaces
     """
     return len(password) >= 10 and \
-      password.lower() != password.upper() and \
+      password.lower() != password and \
       " " not in password
   #...
 ```
@@ -295,7 +309,7 @@ class Administrator(User):
     3. No spaces
     """
     return len(password) >= 20 and \
-      password.lower() != password.upper() and \
+      password.lower() != password and \
       any([c in password for c in  ["!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"]]) and \
       " " not in password
 
@@ -307,7 +321,20 @@ class Administrator(User):
 
 Two changes here, other than the declaration using the `User` class as a parent in the parentheses. First, we **override** the `validate_password` method for the `Administrator` class, because this class has a stricter password policy. Second, the constructor first calls `super()`, which returns the parent class, and invokes its constructor with the arguments passed to `Administrator.__init__()`. Then we modify the role separately for admins.
 
+Let's make a new `admin` user just to prove it works.
+
+```python
+admin = Administrator("admin", "ThisIsASuperSecretPassword123!")
+print(admin)
+"""
+=>
+ID: 1
+Username: admin
+Password: ThisIsASuperSecretPassword123!
+Role: administrator  
+"""
+```
+
 This is how we can create variations of complicated objects that share significant amounts of structure.
 
 There's some art to thinking in objects when writing code, and not everyone agrees on the best ways to do it. Some people avoid it altogether and stick to writing lots of composed functions. But when a problem naturally fits into object-shaped patterns, you should have the tools to express those ideas clearly, and to make distinctions between super and sub-classes of objects.
-

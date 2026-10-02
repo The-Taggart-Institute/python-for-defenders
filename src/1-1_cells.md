@@ -1,6 +1,4 @@
-# 1-1: Cells
-
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/rjfL7YN0tyQ?si=6AFPvkmP-s-k-tOe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+# 1-1: Cells and Variables
 
 Welcome to Jupyter! We're going to get familiar with the interface, then cover the basic unit of computing in Jupyter: cells.
 
@@ -12,7 +10,7 @@ When you open Jupyter, you'll see a tabbed and paned interface with a Launcher f
 
 ![launcher](img/1-1_launcher.png)
 
-This launcher is the easiest way to kick off a new Jupyter Notebook, but it also has launcher for a built-in Terminal, raw text editor, and even a Python editor with syntax awareness. Mostly, we'll use the Notebook button, but the others can be handy. You can always reopen this launcher from **File → New Launhcer** in the menu bar. All of the options are also available in the **File → New** submenu. 
+This launcher is the easiest way to kick off a new Jupyter Notebook, but it also has launcher for a built-in Terminal, raw text editor, and even a Python editor with syntax awareness. Mostly, we'll use the Notebook button, but the others can be handy. You can always reopen this launcher from **File → New Launhcer** in the menu bar. All the options are also available in the **File → New** submenu. 
 
 ### Browser
 
@@ -99,19 +97,18 @@ print(2*2)
 
 In Python, like all programming languages, we can store values for later use under named buckets called **variables**. Different values have different data types, as we'll soon see. But I want you to be familiar with the idea of variables right away, and that _cells share variable values_.
 
-Create a new cell and run the following expression:
+Run the following expression in a new cell:
 
 ```python
 x = 5
 ```
 
-Then in a new cell, simply ask for `x`
+Then in another new cell, we simply ask for `x`
 
 ```python
 x
+# => 5
 ```
-
-![variables](img/1-1_variables.png)
 
 Two important discoveries here. First, we **assign a value to a variable** with the `=` operator. A *single* equals sign. It might seem weird that I'm specifying one, but it will matter later. Second, we've demonstrated that variable values persist across cells. However, execution order matters. I can't declare a variable in a cell that executes *after* one in which I reference it.
 
@@ -121,7 +118,7 @@ Variables are one of the **4 Fundamentals of Programming**. We'll see more of th
 
 ### Type Hints
 
-In the associated notebook, you'll see **type hint** notation like:
+In this course, you'll see **type hint** notation like:
 
 ```python
 message: str = "Hello, World!"

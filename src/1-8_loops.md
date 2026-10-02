@@ -1,7 +1,5 @@
 # 1-8: Loops
 
-<iframe style="width: 800px;height: 500px" src="https://www.youtube.com/embed/ypBQloHtZgs?si=baIIrU1zrkYPBNYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 Loops are yet another control flow structure, and number 3 in the **4 Fundamental Structures of Programming**. Computers are all about automation, and automation is all about repetitive tasks. Programs can run as many times as we need, but often specific instructions within a program need to run multiple times as well. Enter loops.
 
 In Python, loops come in two flavors. We have `for` loops when we have a pre-existing collection or sequence for which we want to repeat the same instructions. We also have `while` loops which will repeat the same instructions **as long as** a condition is `True`—or **until** a condition is `False`.
@@ -143,6 +141,9 @@ nums: range = range(1,100)
 squares = []
 for n in nums:
   squares.append(n * n)
+
+# We don't need to see them all
+squares[:10]
 ```
 
 We start with an originating collection and a new empty one. Then we use a loop to populate the new list with the result of whatever operation we wish to perform on each element of the original. This is a tried-and-true pattern, and it is a perfectly valid way of building collections.
@@ -182,7 +183,7 @@ Turns out you can do the same thing with dictionaries, although the syntax can g
 
 ```python
 users: list[str] = ["admin", "bob", "carol"]
-users_dict: dict = {u: {"username": u, password: "changeme"} for u in users}
+users_dict: dict = {u: {"username": u, "password": "changeme"} for u in users}
 users_dict
 
 """
