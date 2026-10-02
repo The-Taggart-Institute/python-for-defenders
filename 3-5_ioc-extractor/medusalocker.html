@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://www.cisa.gov/uscert/ncas/alerts/aa22-181a -->
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<script async="" src="./#StopRansomware_ MedusaLocker _ CISA_files/async-ads.js.download"></script><script async="" src="./#StopRansomware_ MedusaLocker _ CISA_files/async-ads.js.download"></script><script async="" src="./#StopRansomware_ MedusaLocker _ CISA_files/gtag.js.download"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-34879253-1", {"groups":"default","anonymize_ip":true,"page_placeholder":"PLACEHOLDER_page_path","allow_ad_personalization_signals":false});</script>
+<meta name="description" content="Actions to take today to mitigate cyber threats from ransomware: • Prioritize remediating known exploited vulnerabilities. • Train users to recognize and report phishing attempts. • Enable and enforce multifactor authentication.">
+<meta name="abstract" content="As part of its mission, CISA leads the effort to enhance the security, resiliency, and reliability of the Nation&#39;s cybersecurity and communications infrastructure.">
+<meta name="keywords" content="uscert, csirt, cert, cybersecurity, cyber security, computer security, U. S. Computer Emergency Readiness, cyber risks">
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://www.cisa.gov/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="canonical" href="https://us-cert.cisa.gov/ncas/alerts/aa22-181a">
+<link rel="shortlink" href="https://us-cert.cisa.gov/node/17761">
+
+    <title>#StopRansomware: MedusaLocker | CISA</title>
+    <link rel="stylesheet" media="all" href="./#StopRansomware_ MedusaLocker _ CISA_files/css_-w-jQbIWIO0ZERqyQMFp9m1ddgDjs5ZGsor0ebo5CG4.css">
+<link rel="stylesheet" media="all" href="./#StopRansomware_ MedusaLocker _ CISA_files/css_ZlAUf0FzQEL4Mwkj9I1e3poB51RO0L9IYGmYG_TxTfQ.css">
+
+    
+    <!-- Google Font -->
+    <style type="text/css">
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/profiles/uscertd8_gov/themes/custom/cert/fonts/source-sans-pro-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+  url('/profiles/uscertd8_gov/themes/custom/cert/fonts/source-sans-pro-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/profiles/uscertd8_gov/themes/custom/cert/fonts/source-sans-pro-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/profiles/uscertd8_gov/themes/custom/cert/fonts/source-sans-pro-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('/profiles/uscertd8_gov/themes/custom/cert/fonts/source-sans-pro-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/profiles/uscertd8_gov/themes/custom/cert/fonts/source-sans-pro-v12-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+    </style>
+    <!--link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"--> 
+    <!-- Google Font -->
+  <script src="./#StopRansomware_ MedusaLocker _ CISA_files/cse_element__en.js.download" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./#StopRansomware_ MedusaLocker _ CISA_files/default+en.css"><link type="text/css" rel="stylesheet" href="./#StopRansomware_ MedusaLocker _ CISA_files/default.css"><script src="./#StopRansomware_ MedusaLocker _ CISA_files/cse_element__en.js.download" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./#StopRansomware_ MedusaLocker _ CISA_files/default+en.css"><link type="text/css" rel="stylesheet" href="./#StopRansomware_ MedusaLocker _ CISA_files/default.css"><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#666666}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#666666;background-color:#005287;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#1A73E8;border-color:#1A73E8;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#666666;border-color:#666666;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#1155CC}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#1155CC}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#1155CC}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#1155CC}.gsc-cursor-page{color:#1155CC}a.gsc-trailing-more-results:link{color:#1155CC}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#666666;background-color:#FFFFFF;color:#666666}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#1A73E8;background-color:#FFFFFF;color:#1A73E8}.gsc-webResult.gsc-result.gsc-promotion{border-color:#FFFFFF;background-color:#F6F6F6}.gsc-completion-title{color:#1155CC}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#1155CC}.gcsc-find-more-on-google-magnifier{fill:#1155CC}</style><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#666666}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#666666;background-color:#005287;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#1A73E8;border-color:#1A73E8;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#666666;border-color:#666666;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#1155CC}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#1155CC}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#1155CC}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#1155CC}.gsc-cursor-page{color:#1155CC}a.gsc-trailing-more-results:link{color:#1155CC}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#666666;background-color:#FFFFFF;color:#666666}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#1A73E8;background-color:#FFFFFF;color:#1A73E8}.gsc-webResult.gsc-result.gsc-promotion{border-color:#FFFFFF;background-color:#F6F6F6}.gsc-completion-title{color:#1155CC}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#1155CC}.gcsc-find-more-on-google-magnifier{fill:#1155CC}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+  <body class="path-node page-node-type-activity-alert has-glyphicons">
+    <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-181a#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    
+
+
+<div class="container-fluid top-top">
+      <aside role="complementary">
+        <div class="region region-top">
+    <section id="block-certtoptop" class="block block-block-content block-block-content4d95ffde-0818-4e6b-bd79-d1547b08c0c0 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="container">
+<div id="top">
+<div class="row">
+<div class="col-sm-12 flag"><img alt="United States Flag" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/flag.png" style="position: absolute;">
+<p style="padding-left: 35px; font-family: Arial; font-size: 11px;">An official website of the United States government <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-181a#" id="here-is-how-u-know">Here's how you know <span class="arrow down"> </span></a></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="usa-banner-content usa-grid usa-accordion-content hidden container" id="gov-banner">
+<div class="usa-banner-guidance-gov usa-width-one-half col-sm-6"><img alt="Dot gov" class="usa-banner-icon usa-media_block-img" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/icon-dot-gov.svg">
+<div class="usa-media_block-body"><strong>Official websites use .gov</strong><br>
+A <b>.gov</b> website belongs to an official government organization in the United States.</div>
+</div>
+
+<div class="usa-banner-guidance-ssl usa-width-one-half col-sm-6"><img alt="SSL" class="usa-banner-icon usa-media_block-img" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/icon-https.svg">
+<div class="usa-media_block-body"><strong>Secure .gov websites use HTTPS</strong></div>
+
+<div class="usa-media_block-body">A <b>lock (<img alt="lock icon" src="./#StopRansomware_ MedusaLocker _ CISA_files/lock.svg" style="width:15px;">)</b> or <b>https://</b> means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.</div>
+</div>
+</div>
+</div>
+      
+  </section>
+
+
+  </div>
+
+    </aside>
+  </div>
+
+
+
+<div class="container-fluid hidden-xs hidden-sm banner-region">
+<div class="container">
+<div class="row">
+
+
+  
+
+<section class="col-sm-9">
+
+      <a id="logo-section"></a>
+        <div class="region region-logo">
+    <section id="block-certlogo" class="block block-block-content block-block-content4639a667-debe-4642-bc69-7839662c0187 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="hidden-xs hidden-sm"><a href="https://www.cisa.gov/uscert"><img alt="Cybersecurity and Infrastructure Security Agency CISA" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/logo_verbose.png" title="Cybersecurity and Infrastructure Security Agency CISA"></a></div>
+</div>
+      
+  </section>
+
+
+  </div>
+
+    
+  </section>
+
+
+
+      <aside class="col-sm-3" role="complementary">
+        <div class="region region-search">
+    <section id="block-certsearch" class="block block-block-content block-block-contentc33bd875-6ea6-42cc-b1ab-348a4e4bdff7 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div><script async="" src="./#StopRansomware_ MedusaLocker _ CISA_files/f.txt"></script>
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" aria-label="search" id="gsc-i-id1" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none;" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;" title="Clear search box" role="button"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div>
+</div>
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.navbar-default ul.navbar-nav > li.last a{
+display: none;
+
+/*--><!]]>*/
+</style>
+<div style="padding: 1px 1px 1px 1px">
+<center><a class="btn btn-primary" href="https://www.cisa.gov/" style="font-weight: bold; width: 30%" type="button">CISA.gov</a> <a class="btn btn-primary" href="https://www.cisa.gov/uscert/services" style="font-weight: bold; width: 30%" type="button">Services</a> <a class="btn btn-primary" href="https://www.cisa.gov/uscert/report" style="font-weight: bold; width: 30%" type="button">Report</a></center>
+</div>
+</div>
+      
+  </section>
+
+
+  </div>
+
+    </aside>
+  </div>
+</div>
+<hr class="hidden-xs nav-top-line">
+</div>
+
+
+
+          <header class="navbar navbar-default container-fluid" id="navbar" role="banner">
+        <div class="container ">
+      <div class="navbar-header">
+        
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div class="hidden-lg hidden-md mobile-nav">
+        <a class="" href="https://www.cisa.gov/">
+            <img src="./#StopRansomware_ MedusaLocker _ CISA_files/logo3.png" alt="US Department of Homeland Security CISA Cyber + Infrastructure" title="US Department of Homeland Security CISA Cyber + Infrastructure">
+          </a>
+        </div>
+      </div>
+
+              <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <section id="block-certsearchmobile" class="block block-block-content block-block-content0da6361c-e31a-4a58-b455-f9ebde1ba544 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="hidden-lg hidden-md"><script async="" src="./#StopRansomware_ MedusaLocker _ CISA_files/f.txt"></script>
+<div id="___gcse_1"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id2"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id51" class="gstl_51 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti51" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" aria-label="search" id="gsc-i-id2" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st51" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb51" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div>
+</div>
+
+<div class="hidden-md hidden-lg" style="padding: 8px"><a class="btn btn-primary btn-block" href="https://www.cisa.gov/" role="button" style="font-weight: bold">CISA.gov</a></div>
+
+<div class="hidden-md hidden-lg" style="padding: 8px"><a class="btn btn-primary btn-block" href="https://www.cisa.gov/uscert/services" role="button" style="font-weight: bold">Services</a></div>
+
+<div class="hidden-md hidden-lg" style="padding: 8px"><a class="btn btn-primary btn-block" href="https://www.cisa.gov/uscert/report" role="button" style="font-weight: bold">Report</a></div>
+</div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-certmainmenu-menu" id="block-certmainmenu">
+            
+  <h2 class="visually-hidden" id="block-certmainmenu-menu">CertMain Menu</h2>
+  
+
+        
+      <ul class="menu menu--certmain-menu nav navbar-nav">
+                      <li class="first">
+                                        <a href="https://www.cisa.gov/uscert/ncas" title="Alerts and Tips" data-drupal-link-system-path="node/5">Alerts and Tips</a>
+              </li>
+                      <li>
+                                        <a href="https://www.cisa.gov/uscert/resources" title="Resources" data-drupal-link-system-path="node/12436">Resources</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://www.cisa.gov/ics">Industrial Control Systems</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+                </div></header>
+  <hr class="hidden-xs hidden-sm nav-bottom-line">
+<div class="visible-xs visible-sm mobile-border"></div>
+
+
+<div class="container">
+    <div id="print-logo"><img alt="US Department of Homeland Security CISA Cyber + Infrastructure" src="./#StopRansomware_ MedusaLocker _ CISA_files/logo2.png"></div>
+    <div id="tlp-header"><svg height="30" width="120"> <rect fill="black" height="30" width="120" x="0" y="0"></rect> <text fill="#ffffff" font-size="18px" x="10" y="20">TLP:WHITE</text> </svg></div>
+    <div id="tlp-footer"><svg height="30" width="120"> <rect fill="black" height="30" width="120" x="0" y="0"></rect> <text fill="#ffffff" font-size="18px" x="10" y="20">TLP:WHITE</text> </svg></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div role="main" class="main-container container js-quickedit-main-content">
+    <div class="row">
+
+                              <div class="col-sm-12" role="heading" aria-level="1">
+              <div class="region region-header">
+      <div class="container-fluid hidden-xs">
+  <ol class="breadcrumb">
+          <li>
+                  <a href="https://www.cisa.gov/uscert/ncas">National Cyber Awareness System</a>&nbsp;&nbsp;&nbsp;&nbsp;&gt;
+              </li>
+          <li>
+                  <a href="https://www.cisa.gov/uscert/ncas/alerts">Alerts</a>&nbsp;&nbsp;&nbsp;&nbsp;&gt;
+              </li>
+          <li class="active">
+                  #StopRansomware: MedusaLocker 
+              </li>
+      </ol>
+</div>
+
+
+
+  </div>
+
+          </div>
+              
+
+            
+            
+                        
+
+            
+                  <section class="col-sm-12">
+
+                              <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+</div>
+              
+                                      
+                  
+                          <a id="main-content"></a>
+            <div class="region region-content">
+                  <div id="ncas-header">
+            <div id="alerts-archive">
+                <a title="View Archives" href="https://www.cisa.gov/uscert/ncas/alerts/">More Alerts</a>
+            </div>
+            <h1 id="page-title">Alert (AA22-181A)</h1>
+            <h2 id="page-sub-title">#StopRansomware: MedusaLocker </h2>
+            <div class="submitted meta-text">
+                                Original release date: June 30, 2022  | Last <a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-181a#revisions">revised</a>: August 11, 2022
+                                            </div>
+            <div id="social-options">
+	<!-- START PRINT BUTTON -->
+		<div id="print-button">
+			<span id="custom-print-button">
+				<a rel="nofollow" href="javascript:window.print();" title="Click to print."><img src="./#StopRansomware_ MedusaLocker _ CISA_files/print-button.png" alt="Click to print."></a>
+			</span>
+		</div>
+    <!-- END PRINT BUTTON -->
+	<!-- START TWEET BUTTON -->
+	<div id="tweet-button">
+		<span id="custom-tweet-button">
+			<a rel="nofollow" target="_blank" href="https://twitter.com/share?url=https%3A%2F%2Fus-cert.cisa.gov%2Fncas%2Falerts%2Faa22-181a" class="popup-twitter" title="Click to Tweet."><img src="./#StopRansomware_ MedusaLocker _ CISA_files/tweet-button.png" alt="Click to Tweet."></a>
+		</span>
+	</div>
+	<!-- END TWEET BUTTON -->
+
+	<!-- START FACEBOOK BUTTON -->
+	<div id="facebook-button">
+		<span id="custom-facebook-button">
+		<a rel="nofollow" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fus-cert.cisa.gov%2Fncas%2Falerts%2Faa22-181a" class="popup-facebook" title="Click to send to Facebook."><img src="./#StopRansomware_ MedusaLocker _ CISA_files/facebook-send-button.png" alt="Click to send to Facebook."></a>
+		</span>
+	</div>
+	<!-- END FACEBOOK BUTTON -->
+
+	<!-- START SHARE BUTTON -->
+	<div id="share-button">
+		<span id="custom-share-button">
+			<a rel="nofollow" target="_blank" href="http://www.addthis.com/bookmark.php?url=https%3A%2F%2Fus-cert.cisa.gov%2Fncas%2Falerts%2Faa22-181a" class="popup-share" title="Click to Share."><img src="./#StopRansomware_ MedusaLocker _ CISA_files/share-button.png" alt="Click to Share."></a>
+		</span>
+	</div>
+	<!-- END SHARE BUTTON -->
+
+</div>
+        </div>
+    
+  
+<article role="article" about="/ncas/alerts/aa22-181a" class="activity-alert full clearfix">
+
+  
+    
+
+  
+  <div class="content">
+	<div id="ncas-content">
+        		<a id="summary"></a>
+		<h3>Summary</h3>
+        
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p class="tip-intro" style="font-size: 15px;"><b>Actions to take today to mitigate cyber threats from ransomware:</b><br>
+• Prioritize remediating <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">known exploited vulnerabilities</a>.<br>
+• Train users to recognize and report phishing attempts.<br>
+• Enable and enforce multifactor authentication.</p>
+
+<p><em>Note: this joint Cybersecurity Advisory (CSA) is part of an ongoing <a href="https://www.cisa.gov/stopransomware/stopransomware">#StopRansomware</a> effort to publish advisories for network defenders that detail various ransomware variants and ransomware threat actors. These #StopRansomware advisories include recently and historically observed tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) to help organizations protect against ransomware. Visit <a href="https://www.cisa.gov/stopransomware">stopransomware.gov</a> to see all #StopRansomware advisories and to learn more about other ransomware threats and no-cost resources.</em></p>
+
+<p>The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), the Department of the Treasury, and the Financial Crimes Enforcement Network (FinCEN) are releasing this CSA to provide information on MedusaLocker ransomware. Observed as recently as May 2022, MedusaLocker actors predominantly rely on vulnerabilities in Remote Desktop Protocol (RDP) to access victims’ networks. The MedusaLocker actors encrypt the victim's data and leave a ransom note with communication instructions in every folder containing an encrypted file. The note directs victims to provide ransomware payments to a specific Bitcoin wallet address. MedusaLocker appears to operate as a Ransomware-as-a-Service (RaaS) model based on the observed split of ransom payments. Typical RaaS models involve the ransomware developer and various affiliates that deploy the ransomware on victim systems. MedusaLocker ransomware payments appear to be consistently split between the affiliate, who receives 55 to 60 percent of the ransom; and the developer, who receives the remainder.&nbsp;</p>
+
+<p>Download the PDF version of this report: <a href="https://www.cisa.gov/uscert/sites/default/files/publications/AA22-181A_stopransomware_medusalocker.pdf">pdf, 633 kb</a></p>
+</div>
+      
+        
+        
+        		    <a id="technical-details"></a>
+		    <h3>Technical Details</h3>
+            
+            <div class="field field--name-field-aa-technical-details field--type-text-long field--label-hidden field--item"><p>MedusaLocker ransomware actors most often gain access to victim devices through vulnerable Remote Desktop Protocol (RDP) configurations [<a href="https://attack.mitre.org/versions/v11/techniques/T1133/">T1133</a>]. Actors also frequently use email phishing and spam email campaigns—directly attaching the ransomware to the email—as initial intrusion vectors [<a href="https://attack.mitre.org/versions/v11/techniques/T1566/">T1566</a>].</p>
+
+<p>MedusaLocker ransomware uses a batch file to execute PowerShell script <code>invoke-ReflectivePEInjection</code> [<a href="https://attack.mitre.org/versions/v11/techniques/T1059/001/">T1059.001</a>]. This script propagates MedusaLocker throughout the network by editing the <code>EnableLinkedConnections</code> value within the infected machine’s registry, which then allows the infected machine to detect attached hosts and networks via Internet Control Message Protocol (ICMP) and to detect shared storage via Server Message Block (SMB) Protocol.&nbsp;</p>
+
+<p>MedusaLocker then:&nbsp;</p>
+
+<ul>
+	<li>Restarts the <code>LanmanWorkstation</code> service, which allows registry edits to take effect.&nbsp;</li>
+	<li>Kills the processes of well-known security, accounting, and forensic software.&nbsp;</li>
+	<li>Restarts the machine in safe mode to avoid detection by security software [<a href="https://attack.mitre.org/versions/v11/techniques/T1562/009">T1562.009</a>].</li>
+	<li>Encrypts victim files with the AES-256 encryption algorithm; the resulting key is then encrypted with an RSA-2048 public key [<a href="https://attack.mitre.org/versions/v11/techniques/T1486/">T1486</a>].&nbsp;</li>
+	<li>Runs every 60 seconds, encrypting all files except those critical to the functionality of the victim’s machine and those that have the designated encrypted file extension.&nbsp;</li>
+	<li>Establishes persistence by copying an executable (<code>svhost.exe</code> or <code>svhostt.exe</code>) to the <code>%APPDATA%\Roaming</code> directory and scheduling a task to run the ransomware every 15 minutes.&nbsp;</li>
+	<li>Attempts to prevent standard recovery techniques by deleting local backups, disabling startup recovery options, and deleting shadow copies [<a href="https://attack.mitre.org/versions/v11/techniques/T1490/">T1490</a>].</li>
+</ul>
+
+<p>MedusaLocker actors place a ransom note into every folder containing a file with the victim's encrypted data. The note outlines how to communicate with the MedusaLocker actors, typically providing victims one or more email address at which the actors can be reached. The size of MedusaLocker ransom demands appears to vary depending on the victim’s financial status as perceived by the actors.&nbsp;<br>
+ </p>
+
+<h4><strong>Indicators of Compromise</strong></h4>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th colspan="4" scope="col">Encrypted File Extensions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="text-align-center" scope="col">.1btc</td>
+			<td class="text-align-center" scope="col">.matlock20</td>
+			<td class="text-align-center" scope="col">.marlock02</td>
+			<td class="text-align-center" scope="col">.readinstructions</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.bec</td>
+			<td class="text-align-center" scope="col">.mylock</td>
+			<td class="text-align-center" scope="col">.jpz.nz</td>
+			<td class="text-align-center" scope="col">.marlock11</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.cn</td>
+			<td class="text-align-center" scope="col">.NET1</td>
+			<td class="text-align-center" scope="col">.key1</td>
+			<td class="text-align-center" scope="col">.fileslocked</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.datalock</td>
+			<td class="text-align-center" scope="col">.NZ</td>
+			<td class="text-align-center" scope="col">.lock</td>
+			<td class="text-align-center" scope="col">.lockfilesUS</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.deadfilesgr</td>
+			<td class="text-align-center" scope="col">.tyco</td>
+			<td class="text-align-center" scope="col">.lockdata7</td>
+			<td class="text-align-center" scope="col">.rs</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.faratak</td>
+			<td class="text-align-center" scope="col">.uslockhh</td>
+			<td class="text-align-center" scope="col">.lockfiles</td>
+			<td class="text-align-center" scope="col">.tyco</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.fileslock</td>
+			<td class="text-align-center" scope="col">.zoomzoom</td>
+			<td class="text-align-center" scope="col">.perfection</td>
+			<td class="text-align-center" scope="col">.uslockhh</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.marlock13</td>
+			<td class="text-align-center" scope="col">n.exe</td>
+			<td class="text-align-center" scope="col">.Readinstruction</td>
+			<td class="text-align-center" scope="col">.marlock08</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.marlock25</td>
+			<td class="text-align-center" scope="col">nt_lock20</td>
+			<td class="text-align-center" scope="col">.READINSTRUCTION</td>
+			<td class="text-align-center" scope="col">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">.marlock6</td>
+			<td class="text-align-center" scope="col">.marlock01</td>
+			<td class="text-align-center" scope="col">.ReadInstructions</td>
+			<td scope="col" style="text-align: left;">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th colspan="2" scope="col">Ransom Note File Names</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="text-align-center" scope="col">how_to_ recover_data.html&nbsp;</td>
+			<td class="text-align-center" scope="col">how_to_recover_data.html.marlock01</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">instructions.html&nbsp;</td>
+			<td class="text-align-center" scope="col">READINSTRUCTION.html&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">!!!HOW_TO_DECRYPT!!!</td>
+			<td class="text-align-center" scope="col">How_to_recovery.txt</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">readinstructions.html&nbsp;</td>
+			<td class="text-align-center" scope="col">readme_to_recover_files</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">recovery_instructions.html&nbsp;</td>
+			<td class="text-align-center" scope="col">HOW_TO_RECOVER_DATA.html</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">recovery_instruction.html</td>
+			<td class="text-align-center" scope="col">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="text-align-center">&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th scope="col">Payment Wallets</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td scope="col">14oxnsSc1LZ5M2cPZeQ9rFnXqEvPCnZikc&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">1DRxUFhvJjGUdojCzMWSLmwx7Qxn79XbJq&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">18wRbb94CjyTGkUp32ZM7krCYCB9MXUq42&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">1AbRxRfP6yHePpi7jmDZkS4Mfpm1ZiatH5</td>
+		</tr>
+		<tr>
+			<td scope="col">1Edcufenw1BB4ni9UadJpQh9LVx9JGtKpP</td>
+		</tr>
+		<tr>
+			<td scope="col">1DyMbw6R9PbJqfUSDcK5729xQ57yJrE8BC&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">184ZcAoxkvimvVZaj8jZFujC7EwR3BKWvf&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">14oH2h12LvQ7BYBufcrY5vfKoCq2hTPoev</td>
+		</tr>
+		<tr>
+			<td scope="col">bc1qy34v0zv6wu0cugea5xjlxagsfwgunwkzc0xcjj</td>
+		</tr>
+		<tr>
+			<td scope="col">bc1q9jg45a039tn83jk2vhdpranty2y8tnpnrk9k5q</td>
+		</tr>
+		<tr>
+			<td scope="col">bc1qz3lmcw4k58n79wpzm550r5pkzxc2h8rwmmu6xm</td>
+		</tr>
+		<tr>
+			<td scope="col">1AereQUh8yjNPs9Wzeg1Le47dsqC8NNaNM</td>
+		</tr>
+		<tr>
+			<td scope="col">1DeNHM2eTqHp5AszTsUiS4WDHWkGc5UxHf</td>
+		</tr>
+		<tr>
+			<td scope="col">1HEDP3c3zPwiqUaYuWZ8gBFdAQQSa6sMGw</td>
+		</tr>
+		<tr>
+			<td scope="col">1HdgQM9bjX7u7vWJnfErY4MWGBQJi5mVWV</td>
+		</tr>
+		<tr>
+			<td scope="col">1nycdn9ebxht4tpspu4ehpjz9ghxlzipll</td>
+		</tr>
+		<tr>
+			<td scope="col">12xd6KrWVtgHEJHKPEfXwMVWuFK4k1FCUF</td>
+		</tr>
+		<tr>
+			<td scope="col">1HZHhdJ6VdwBLCFhdu7kDVZN9pb3BWeUED</td>
+		</tr>
+		<tr>
+			<td scope="col">1PormUgPR72yv2FRKSVY27U4ekWMKobWjg</td>
+		</tr>
+		<tr>
+			<td scope="col">14cATAzXwD7CQf35n8Ea5pKJPfhM6jEHak</td>
+		</tr>
+		<tr>
+			<td scope="col">1PopeZ4LNLanisswLndAJB1QntTF8hpLsD</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th colspan="2" scope="col">Email Addresses</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="text-align-center" scope="col">willyhill1960@tutanota[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">unlockfile@cock[.]li</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">zlo@keem[.]ne&nbsp;</td>
+			<td class="text-align-center" scope="col">unlockmeplease@airmail[.]cc&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">zlo@keemail[.]me&nbsp;</td>
+			<td class="text-align-center" scope="col">unlockmeplease@protonmail[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">zlo@tfwno[.]gf&nbsp;</td>
+			<td class="text-align-center" scope="col">willyhill1960@protonmail[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">support@ypsotecs[.]com</td>
+			<td class="text-align-center" scope="col">support@imfoodst[.]com&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th colspan="2" scope="col">Email Addresses</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="text-align-center" scope="col">traceytevin@protonmail[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">support@itwgset[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">unlock_file@aol[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">support@novibmaker[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">unlock_file@outlook[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">support@securycasts[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">support@exoprints[.]com</td>
+			<td class="text-align-center" scope="col">rewmiller-1974@protonmail[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">support@exorints[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">rpd@keemail[.]me</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">support@fanbridges[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">soterissylla@wyseil[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">support@faneridges[.]com</td>
+			<td class="text-align-center" scope="col">support@careersill[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">perfection@bestkoronavirus[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">karloskolorado@tutanota[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">pool1256@tutanota[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">kevynchaz@protonmail[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">rapid@aaathats3as[.]com</td>
+			<td class="text-align-center" scope="col">korona@bestkoronavirus[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">rescuer@tutanota[.]com</td>
+			<td class="text-align-center" scope="col">lockPerfection@gmail[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp01@decorous[.]cyou</td>
+			<td class="text-align-center" scope="col">lockperfection@gmail[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp01@wholeness[.]business</td>
+			<td class="text-align-center" scope="col">mulierfagus@rdhos[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp02@decorous[.]cyou</td>
+			<td class="text-align-center" scope="col">[rescuer]@cock[.]li&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp02@wholness[.]business</td>
+			<td class="text-align-center" scope="col">107btc@protonmail[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelpresotre@outlook[.]com</td>
+			<td class="text-align-center" scope="col">33btc@protonmail[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">cmd@jitjat[.]org&nbsp;</td>
+			<td class="text-align-center" scope="col">777decoder777@protonmail[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">coronaviryz@gmail[.]com</td>
+			<td class="text-align-center" scope="col">777decoder777@tfwno[.]gf</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">dec_helper@dremno[.]com</td>
+			<td class="text-align-center" scope="col">andrewmiller-1974@protonmail[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">dec_helper@excic[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">angelomartin-1980@protonmail[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">dec_restore@prontonmail[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">ballioverus@quocor[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">dec_restore1@outlook[.]com</td>
+			<td class="text-align-center" scope="col">beacon@jitjat[.]org</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">bitcoin@sitesoutheat[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">beacon@msgsafe[.]io</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">briansalgado@protonmail[.]com</td>
+			<td class="text-align-center" scope="col">best666decoder@tutanota[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">bugervongir@outlook[.]com</td>
+			<td class="text-align-center" scope="col">bitcoin@mobtouches[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">best666decoder@protonmail[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">encrypt2020@outlook[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">decoder83540@cock[.]li</td>
+			<td class="text-align-center" scope="col">fast-help@inbox[.]lv</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">decra2019@gmail[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">fuc_ktheworld1448@outlook[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">diniaminius@winrof[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">fucktheworld1448@cock[.]li</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">dirhelp@keemail[.]me&nbsp;</td>
+			<td class="text-align-center" scope="col">gartaganisstuffback@gmail[.]com&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th colspan="2" scope="col">Email Addresses</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="text-align-center" scope="col">emaila.elaich@iav.ac[.]ma</td>
+			<td class="text-align-center" scope="col">gavingonzalez@protonmail[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">emd@jitjat[.]org</td>
+			<td class="text-align-center" scope="col">gsupp@onionmail[.]org</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">encrypt2020@cock[.]li&nbsp;</td>
+			<td class="text-align-center" scope="col">gsupp@techmail[.]info</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">best666decoder@protonmail[.]com&nbsp;</td>
+			<td class="text-align-center" scope="col">helper@atacdi[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp@decorous[.]cyou</td>
+			<td class="text-align-center" scope="col">helper@buildingwin[.]com&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp@decorous[.]cyoum</td>
+			<td class="text-align-center" scope="col">helprestore@outlook[.]com</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">ithelp@wholeness[.]business</td>
+			<td class="text-align-center" scope="col">helptorestore@outlook[.]com</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th scope="col">TOR Addresses</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/6-iSm1B1Ehljh8HYuXGym4Xyu1WdwsR2Av-6tXiw1BImsqoLh7pd207Rl6XYoln7sId&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/8-grp514hncgblilsjtd32hg6jtbyhlocr5pqjswxfgf2oragnl3pqno6fkqcimqin</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6y4g53rxdi5.onion/21-8P4ZLCsMETPaLw9MkSlXJsNZWdHe0rxjt-XmBgZLWlm5ULGFCOJFuVdEymmxysofwu</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/2l-8P4ZLCsMTPaLw9MkSlXJsNZWdHeOrxjtE9lck1MuXPYo29daQys6gomZZXUImN7Z&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-8P4ZLCsMTPaLw9MkSlXJsNZWdHe0rxjt-DcaE9HeHywqSHvdcIwOndCS4PuWASX8g&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-8P4ZLCsMTPaLw9MkSlXJsNZWdHe0rxjt-kB4rQXGKyxGiLyw7YDsMKSBjyfdwcyxo</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-8P4ZLCsMTPaLw9MkSlXJsNZWdHe0rxjt-bET6JbB9vEMZ7qYBPqUMCxOQExFx4iOi&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5. onion/8-MO0Q7O97Hgxvm1YbD7OMnimImZJXEWaG-RbH4TvdwVTGQB3X6VOUOP3lgO6YOJEOW</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/8-gRp514hncgb1i1sjtD32hG6jTbUh1ocR-Uola2Fo30KTJvZX0otYZgTh5txmKwUNe&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-E6UQFCEuCn4KvtAh4TonRTpyHqFo6F6L-OWQwD1w1Td7hY7IGUUjxmHMoFSQW6blg&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-E6UQFCEuCn4KvtAh4TonRTpyHqFo6F6L-uGHwkkWCoUtBbZWN50sSS4Ds8RABkrKy&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-E6UQFCEuCn4KvtAh4TonRTpyHqFo6F6L-Tj3PRnQlpHc9OftRVDGAWUulvE80yZbc&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/8-Ww5sCBhsL8eM4PeAgsfgfa9lrqa81r31-tDQRZCAUe4164X532j9Ky16IBN9StWTH&nbsp;</td>
+		</tr>
+		<tr>
+			<td scope="col">http://gvlay6u4g53rxdi5.onion/21-wIq5kK9gGKiTmyups1U6fABj1VnXIYRB-I5xek6PG2EbWlPC7C1rXfsqJBlWlFFfY</td>
+		</tr>
+		<tr>
+			<td scope="col">qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd.onion</td>
+		</tr>
+		<tr>
+			<td scope="col">http://medusacegu2ufmc3kx2kkqicrlcxdettsjcenhjena6uannk5f4ffuyd.onion/leakdata/[REDACTED]</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Disclaimer: </strong>Many of these observed IP addresses are several years old and have been historically linked to MedusaLocker ransomware. We recommend these IP addresses be investigated or vetted by organizations prior to taking action, such as blocking.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th scope="col">IP Address</th>
+			<th scope="col"><strong>Last Observed</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td scope="col" style="text-align: left;">195.123.246.138</td>
+			<td scope="col" style="text-align: left;">Nov-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">138.124.186.221</td>
+			<td scope="col" style="text-align: left;">Nov-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">159.223.0.9</td>
+			<td scope="col" style="text-align: left;">Nov-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">45.146.164.141</td>
+			<td scope="col" style="text-align: left;">Nov-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">185.220.101.35</td>
+			<td scope="col" style="text-align: left;">Nov-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">185.220.100.249</td>
+			<td scope="col" style="text-align: left;">Sep-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">50.80.219.149</td>
+			<td scope="col" style="text-align: left;">Sep-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">185.220.101.146</td>
+			<td scope="col" style="text-align: left;">Sep-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">185.220.101.252</td>
+			<td scope="col" style="text-align: left;">Sep-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">179.60.150.97</td>
+			<td scope="col" style="text-align: left;">Sep-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">84.38.189.52</td>
+			<td scope="col" style="text-align: left;">Sep-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">94.232.43.63</td>
+			<td scope="col" style="text-align: left;">Jul-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">108.11.30.103</td>
+			<td scope="col" style="text-align: left;">Apr-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">194.61.55.94</td>
+			<td scope="col" style="text-align: left;">Apr-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">198.50.233.202</td>
+			<td scope="col" style="text-align: left;">Apr-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">40.92.90.105</td>
+			<td scope="col" style="text-align: left;">Jan-2021</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">188.68.216.23</td>
+			<td scope="col" style="text-align: left;">Dec-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">87.251.75.71</td>
+			<td scope="col" style="text-align: left;">Dec-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">196.240.57.20</td>
+			<td scope="col" style="text-align: left;">Oct-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">198.0.198.5</td>
+			<td scope="col" style="text-align: left;">Aug-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">194.5.220.122</td>
+			<td scope="col" style="text-align: left;">Mar-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">194.5.250.124</td>
+			<td scope="col" style="text-align: left;">Mar-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">194.5.220.124</td>
+			<td scope="col" style="text-align: left;">Mar-2020</td>
+		</tr>
+		<tr>
+			<td scope="col" style="text-align: left;">104.210.72.161</td>
+			<td scope="col" style="text-align: left;">Nov-2019</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3>MITRE ATT&amp;CK Techniques</h3>
+
+<p>MedusaLocker actors use the ATT&amp;CK techniques listed in Table 1.</p>
+
+<p class="text-align-center"><em>Table 1: MedusaLocker Actors ATT&amp;CK Techniques for Enterprise</em></p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" class="general-table" style="width: 600px; height: 312px;">
+	<thead>
+		<tr>
+			<th colspan="3" scope="col"><u>Initial Access</u></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="text-align-center" scope="col"><strong>Technique Title</strong></td>
+			<td class="text-align-center" scope="col"><strong>ID</strong></td>
+			<td class="text-align-center" scope="col"><strong>Use</strong></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">External Remote Services</td>
+			<td class="text-align-center" scope="col">T1133</td>
+			<td class="text-align-center" scope="col">MedusaLocker actors gained access to victim devices through vulnerable RDP configurations.</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">Phishing</td>
+			<td class="text-align-center" scope="col">T1566</td>
+			<td class="text-align-center" scope="col">MedusaLocker actors used phishing and spearphishing to obtain access to victims' networks.</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" colspan="3" scope="col"><strong><u>Execution</u></strong></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col"><strong>Technique Title</strong></td>
+			<td class="text-align-center" scope="col"><strong>ID</strong></td>
+			<td class="text-align-center" scope="col"><strong>Use</strong></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">Command and Scripting Interpreter: PowerShell</td>
+			<td scope="col" style="text-align: left;">
+			<p class="text-align-center">T1059.001</p>
+			</td>
+			<td class="text-align-center" scope="col">MedusaLocker actors may abuse PowerShell commands and scripts for execution.</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" colspan="3" scope="col"><u><strong>Defense Evasion</strong></u></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col"><strong>Technique Title</strong></td>
+			<td class="text-align-center" scope="col"><strong>ID</strong></td>
+			<td class="text-align-center" scope="col"><strong>Use</strong></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">Impair Defenses: Safe Mode Boot</td>
+			<td scope="col" style="text-align: left;">
+			<p class="text-align-center">T1562.009</p>
+			</td>
+			<td class="text-align-center" scope="col">MedusaLocker actors may abuse Windows safe mode to disable endpoint defenses. Safe mode starts up the Windows operating system with a limited set of drivers and services.</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" colspan="3" scope="col"><u><strong>Impact</strong></u></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col"><strong>Technique Title</strong></td>
+			<td class="text-align-center" scope="col"><strong>ID</strong></td>
+			<td class="text-align-center" scope="col"><strong>Use</strong></td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">Data Encrypted for Impact</td>
+			<td class="text-align-center" scope="col">T1486</td>
+			<td class="text-align-center" scope="col">MedusaLocker actors encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources.</td>
+		</tr>
+		<tr>
+			<td class="text-align-center" scope="col">Inhibit System Recovery</td>
+			<td class="text-align-center" scope="col">T1490</td>
+			<td class="text-align-center" scope="col">MedusaLocker actors may deny access to operating systems containing features that can help fix corrupted systems, such as backup catalog, volume shadow copies, and automatic repair.</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</div>
+      
+        
+        		    <a id="mitigations"></a>
+		    <h3>Mitigations</h3>
+            
+            <div class="field field--name-field-aa-mitigations field--type-text-long field--label-hidden field--item"><ul>
+	<li>Implement a recovery plan that maintains and retains multiple copies of sensitive or proprietary data and servers in a physically separate, segmented, and secure location (i.e., hard drive, storage device, or the cloud).</li>
+	<li>Implement network segmentation and maintain offline backups of data to ensure limited interruption to the organization.</li>
+	<li>Regularly back up data and password protect backup copies stored offline. Ensure copies of critical data are not accessible for modification or deletion from the system where the data resides.</li>
+	<li>Install, regularly update, and enable real time detection for antivirus software on all hosts.</li>
+	<li>Install updates for operating systems, software, and firmware as soon as possible.</li>
+	<li>Review domain controllers, servers, workstations, and active directories for new and/or unrecognized accounts.</li>
+	<li>Audit user accounts with administrative privileges and configure access controls according to the principle of least privilege.&nbsp;</li>
+	<li>Disable unused ports.</li>
+	<li>Consider adding an email banner to emails received from outside your organization.</li>
+	<li>Disable hyperlinks in received emails.</li>
+	<li>Enforce multifactor authentication (MFA).</li>
+	<li>Use National Institute of&nbsp;Standards and Technology (NIST) standards for developing and managing password policies:
+	<ul>
+		<li>Use longer passwords consisting of at least 8 characters and no more than 64 characters in length.</li>
+		<li>Store passwords in hashed format using industry-recognized password managers.</li>
+		<li>Add password user “salts” to shared login credentials.</li>
+		<li>Avoid reusing passwords.</li>
+		<li>Implement multiple failed login attempt account lockouts.</li>
+		<li>Disable password “hints”.</li>
+		<li>Refrain from requiring password changes unless there is evidence of password compromise.&nbsp;<strong>Note: </strong>NIST guidance suggests favoring longer passwords and no longer require&nbsp;regular and frequent password resets. Frequent password resets are more likely to result in users developing password “patterns” cyber criminals can easily decipher.</li>
+		<li>Require administrator credentials to install software.</li>
+	</ul>
+	</li>
+	<li>Only use secure networks; avoid using public Wi-Fi networks.</li>
+	<li>Consider installing and using a virtual private network (VPN) to establish secure remote connections.</li>
+	<li>Focus on cybersecurity awareness and training. Regularly provide users with training on information security principles and techniques as well as overall emerging cybersecurity risks and vulnerabilities, such as ransomware and phishing scams.</li>
+</ul>
+
+<h3>&nbsp;<br>
+Resources</h3>
+
+<ul>
+	<li>Stopransomware.gov is a whole-of-government approach that gives one central location for ransomware resources and alerts.</li>
+	<li>Resource to mitigate a ransomware attack: CISA-Multi-State Information Sharing and Analysis Center (MS-ISAC) Joint Ransomware Guide</li>
+	<li>No-cost cyber hygiene services: Cyber Hygiene Services and Ransomware Readiness Assessment</li>
+</ul>
+
+<h3>Reporting</h3>
+
+<ul>
+	<li>To report an incident and request technical assistance, contact CISA at <a href="mailto:cisaservicedesk@cisa.dhs.gov" class="mailto" data-extlink="">cisaservicedesk@cisa.dhs.gov<svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg></a> or 888-282-0870, or FBI through a local field office.&nbsp;</li>
+	<li>Financial Institutions must ensure compliance with any applicable Bank Secrecy Act requirements, including suspicious activity reporting obligations. Indicators of compromise (IOCs), such as suspicious email addresses, file names, hashes, domains, and IP addresses, can be provided under Item 44 of the Suspicious Activity Report (SAR) form. For more information on mandatory and voluntary reporting of cyber events via SARs, see FinCEN Advisory FIN-2016-A005, <em><a href="https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2016-a005">Advisory to Financial Institutions on Cyber-Events and Cyber-Enabled Crime</a></em>, October 25, 2016; and FinCEN Advisory FIN-2021-A004, <em><a href="https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2021-a004">Advisory on Ransomware and the Use of the Financial System to Facilitate Ransom Payments</a></em>, November 8, 2021,&nbsp;which updates FinCEN Advisory FIN-2020-A006.</li>
+	<li>The U.S. Department of State’s Rewards for Justice (RFJ) program offers a reward of up to $10 million for reports of foreign government malicious activity against U.S. critical infrastructure. See the <a href="https://www.state.gov/rewards-for-justice/">RFJ website</a> for more information and how to report information securely.</li>
+</ul>
+</div>
+      
+        
+        		    <a id="contact-information"></a>
+		    <h3>Contact Information</h3>
+            
+            <div class="field field--name-field-aa-contact-info field--type-text-long field--label-hidden field--item"><p>To report suspicious or criminal activity related to information found in this Joint Cybersecurity Advisory, contact your local FBI field office at <a href="https://www.fbi.gov/contact-us/field-offices">www.fbi.gov/contact-us/field-offices</a>. When available, please include the following information regarding the incident: date, time, and location of the incident; type of activity; number of people affected; type of equipment used for the activity; the name of the submitting company or organization; and a designated point of contact. To report incidents and anomalous activity or to request incident response resources or technical assistance related to this threat, contact CISA at <a href="mailto:report@cisa.gov" class="mailto" data-extlink="">report@cisa.gov<svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg></a>.</p>
+</div>
+      
+        
+        
+        		    <a id="revisions"></a>
+		    <h3>Revisions</h3>
+            
+      <div class="field field--name-field-aa-revisions field--type-string field--label-hidden field--items">
+              <div class="field--item">June 30, 2022: Initial Version </div>
+          </div>
+  
+        
+        
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p class="privacy-and-terms">This product is provided subject to this <a href="https://www.cisa.gov/uscert/privacy/notification">Notification</a> and this <a href="https://www.dhs.gov/privacy-policy">Privacy &amp; Use</a> policy.</p>
+</div>
+      
+
+	</div>
+                        <div id="document-feedback">
+	<div class="inner-document-feedback center-center">
+        <p><b>Please share your thoughts.</b></p>
+		<p>We recently updated our anonymous <a href="https://www.surveymonkey.com/r/CISA-cyber-survey?product=https://us-cert.cisa.gov/ncas/alerts/aa22-181a">product survey</a>; we'd welcome your feedback.</p>
+	</div>
+</div>
+
+              </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+
+
+                      </div>
+  </div>
+
+
+
+
+
+
+      <footer class="footer container-fluid" role="contentinfo">
+        <div class="region region-footer">
+    <section id="block-certsignup" class="block block-block-content block-block-contentc5846d10-2e2b-4822-aa59-7a5c3262f671 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="container-fluid signup">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 contact-icons">
+<h3>Contact Us</h3>
+
+<p class="phone-text"><img alt="phone icon" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/Icon-Phone.png">(888)282-0870</p>
+
+<p><img alt="email icon" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/Icon-Email.png"><a class="mailto" href="mailto:central@cisa.dhs.gov" title="General questions or suggestions" data-extlink="">Send us email<svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg></a></p>
+
+<p><img alt="lock icon" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/Icon-Lock.png"><a href="https://www.cisa.gov/uscert/contact-us/" title="Download PGP/GPG keys">Download PGP/GPG keys</a></p>
+
+<p><img alt="feedback icon" data-entity-type="" data-entity-uuid="" height="32" src="./#StopRansomware_ MedusaLocker _ CISA_files/icon-feedback.png"><a href="https://www.cisa.gov/forms/website-feedback" title="Website Feedback">Submit website feedback</a></p>
+</div>
+
+<div class="col-lg-6 sub-alert">
+<h3>Subscribe to Alerts</h3>
+
+<p>Receive security alerts, tips, and other updates.</p>
+
+<form action="https://public.govdelivery.com/accounts/USDHSCISA/subscribers/qualify"><label class="visually-hidden" for="email-address-field">Enter your email address</label> <input class="signup-form" id="email-address-field" name="email" placeholder=" Enter your email address" title="Enter your email address" type="text"><br>
+<input class="btn btn-primary" name="submit" title="Sign up for alerts" type="submit" value="Sign Up">&nbsp;</form>
+
+<div class="pull-right signup-icon-one"><a href="https://twitter.com/uscert_gov" title="US-CERT Twitter Feed"><img alt="twitter icon" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/twitter-button.png"></a></div>
+
+<div class="pull-right signup-icon-two"><a href="https://www.cisa.gov/uscert/mailing-lists-and-feeds" title="Mailing Lists and Feeds"><img alt="rss icon" data-entity-type="" data-entity-uuid="" src="./#StopRansomware_ MedusaLocker _ CISA_files/rss-button-bottom.png"></a></div>
+
+<div class="pull-right signup-icon-three"><a href="https://www.cisa.gov/uscert/hsin" class="btn btn-cert-report" name="button" type="button" id="button">HSIN</a></div>
+</div>
+
+<div class="col-lg-3 cert-report"><a class="btn btn-cert-report btn-lg" href="https://www.cisa.gov/uscert/report" name="button" type="button" id="button">Report</a></div>
+</div>
+</div>
+</div>
+</div>
+      
+  </section>
+
+<section id="block-certcertfooter" class="block block-block-content block-block-contentd5b85bd2-62d1-485a-b9ae-f040b1ca1a45 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="container">
+<hr>
+<div class="text-center"><a href="https://www.cisa.gov/" title="Home">Home</a> &nbsp; <a href="https://www.cisa.gov/uscert/sitemap" title="Site Map">Site Map</a> &nbsp; <a href="https://www.cisa.gov/uscert/faq/" title="Frequently Asked Questions">FAQ</a> &nbsp; <a href="https://www.cisa.gov/uscert/contact-us/" title="Contact Us">Contact Us</a> &nbsp; <a href="https://www.cisa.gov/uscert/tlp/" title="Traffic Light Protocol">Traffic Light Protocol</a> &nbsp; <a href="https://www.cisa.gov/uscert/pcii" title="PCII">PCII</a> &nbsp; <a href="https://www.dhs.gov/" title="Accountability">Accountability</a> &nbsp; <a href="https://www.cisa.gov/uscert/disclaimer" title="Disclaimer">Disclaimer</a> &nbsp; <a href="https://www.cisa.gov/uscert/privacy-policy" title="Privacy Policy">Privacy Policy</a> &nbsp; <a href="https://www.dhs.gov/freedom-information-act-foia" title="FOIA">FOIA</a> &nbsp; <a href="https://www.dhs.gov/homeland-security-no-fear-act-reporting" title="No Fear Act">No Fear Act</a> &nbsp; <a href="https://www.cisa.gov/uscert/accessibility/" title="Accessibility">Accessibility</a><a href="https://www.dhs.gov/plain-writing-dhs" title="Plain Writing">Plain Writing</a><a href="https://www.dhs.gov/plug-information" title="Plug-ins">Plug-ins</a> &nbsp; <a href="https://www.oig.dhs.gov/" title="Office of the Inspector General">Inspector General</a> &nbsp; <a href="https://www.whitehouse.gov/" title="The White House">The White House</a> &nbsp; <a href="https://www.usa.gov/" title="USA.gov">USA.gov</a><br>
+&nbsp;
+<p>CISA is part of the <a href="https://www.dhs.gov/" title="Department of Homeland Security">Department of Homeland Security</a></p>
+</div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+    window.onload = function(){
+            jQuery('body.page-node-type-us-cert-events div#ncas-header').find('img').each(function(){
+                    var $src=jQuery(this).prop('src');
+                    if($src.indexOf('default/files/') == -1)jQuery(this).remove();
+                    });
+            if('Privacy Data Breach' == jQuery('#uscert-utilities-irf-form #item-info-impact option:selected').text()){ 
+                jQuery('#item-info-impact-block').removeClass('collapsed'); 
+            }
+jQuery('#print-logo img').removeAttr('width').removeAttr('height');
+if(jQuery('body.path-frontpage').length > 0)
+{   
+    jQuery('.main-container').find('.col-sm-12').removeAttr('role');
+}
+jQuery('#map area').each(function(){ jQuery(this).click(function(){var idstr=jQuery(this).attr('clickthis'); if(jQuery(idstr).hasClass('open') == false){jQuery(idstr).click();}});});  
+if(jQuery('#document-feedback').length > 0)
+{ 
+    var $url    = window.location.href
+    //var str ='Your feedback is very important to us. Please take a moment to complete this <a href="https://surveymonkey.com/r/G8STDRY?product=' + $url + '">survey.';
+    //var $p = jQuery('#document-feedback div p').html(str);
+}
+if(jQuery('#incident-report-irf-form').length > 0) {
+  if(jQuery('#malware-box-div-inner a').prop("href") == "https://www.malware.us-cert.gov/MalwareSubmission/pages/submission.jsf") {
+    jQuery('#malware-box-div-inner a').prop("href", "https://www.malware.us-cert.gov");
+  }
+  jQuery('#details a').each(function() {
+      if(jQuery(this).prop("href") == "https://www.malware.us-cert.gov/MalwareSubmission/pages/submission.jsf") {
+        jQuery(this).prop("href", "https://www.malware.us-cert.gov");
+      }
+      });
+   jQuery('#irf-abort > span').addClass('icon glyphicon glyphicon-remove');
+}
+//--------------------
+
+//--------------------
+    };
+
+//--><!]]>
+</script></div>
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+#views-bootstrap-carousel-block-2 .carousel-inner > .item > a > img {
+  margin:auto;
+}
+button#product-feedback-next {
+    margin-bottom: 10px;
+}
+/*
+.mobile-nav {
+border-bottom: 3px solid #112e51;
+}
+*/
+.cma-banner-container {
+    display: none;
+}
+@media (max-width: 991px) {
+.navbar .navbar-header {
+background: #fff;
+}
+}
+div.banner-region { background: #fff; }
+
+.accordion_fold {
+    padding-bottom: 25px;
+}
+
+h2.accordion.open {
+    background: #f2f2f2;
+}
+
+a { color: #2b72af;}
+
+.navbar-default .navbar-nav > li > a { color: #767676; }
+/* andi */
+.sidebar-widget-orange .orange {
+    background-color: #e77431;
+}
+#block-views-block-ics-announcements-block-1 .views-field-created {
+    color: #565656;
+}
+a#sort-bulletin {
+color: #000;
+background: white;
+position: absolute;
+right: 150px;
+padding: 1px 12px;
+}
+.glyphicon-remove:before {
+    content: "\1F5D9";
+}
+.has-glyphicons .select-wrapper:after {
+    content: '\25bc';
+}
+.glyphicon-pencil:before {
+    content: "\1F589";
+}
+/******************search***************/
+aside.col-sm-5 {
+    margin-top: 6px;
+}
+
+form.gsc-search-box {
+  margin-bottom: 0 !important;
+}
+
+table.gsc-search-box td.gsc-input {
+  padding-right: 0 !important;
+}
+
+.gsc-search-button {
+  margin-left: 0 !important;
+}
+
+.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+  border: none !important;
+  padding-top: 9px !important;
+  padding-bottom: 8px !important;
+  border: 0;
+  background: white;
+  width: 7rem;
+/*  border-bottom-right-radius: 25px; */
+/*  border-top-right-radius: 25px; */
+}
+
+.gsc-search-button-v2 svg {
+  fill: #069 !important;
+  height: 25px;
+  width: 25px;
+}
+
+div#gsc-iw-id1 {
+  border: 0;
+}
+
+.gsc-control-searchbox-only.gsc-control-searchbox-only-en {
+  border: solid 2px #000;
+  border-radius: 50px;
+  padding: 8px;
+}
+.gsc-input-box {
+  border: 0;
+}
+.content form.gsc-search-box.gsc-search-box-tools {
+    border: solid 3px black;
+    border-radius: 50px;
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
+/************search end ***********************/
+
+/*--><!]]>*/
+</style>
+</div>
+      
+  </section>
+
+
+  </div>
+
+    </footer>
+  
+  </div><div style="position: static !important;"></div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/17761","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":{},"trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"(\\.gov|\\.mil|\\.org.*|twitter\\.com\\\/share\\?url\\=.*|www\\.facebook\\.com\\\/sharer\\.php\\?u\\=.*|www\\.addthis\\.com\\\/bookmark\\.php\\?url\\=.*|javascript\\:window\\.print\\(\\)\\;)","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":true,"extAlertText":"You are now leaving an official website of the United States Government (USG), the Department of Homeland Security (DHS), and the Cybersecurity and Infrastructure Security Agency (CISA). Links to non-USG, non-DHS, and non-CISA sites are provided for the visitor\u0027s convenience and do not represent an endorsement by USG, DHS, or CISA of any commercial or private issues, products, or services. Note that the privacy policy of the linked site may differ from that of USG, DHS, and CISA.","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":null}},"bootstrap":{"forms_has_error_value_toggle":1,"popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"user":{"uid":0,"permissionsHash":"230f0cbccc4933716e8656552e7dc8e264d4a5d7722f42bcdf753e884f4b0da2"}}</script>
+<script src="./#StopRansomware_ MedusaLocker _ CISA_files/js_YmGHIJu6nixWupD8LywVWdGY0HC8UBk2VlRFefy9bzg.js.download"></script>
+<script src="./#StopRansomware_ MedusaLocker _ CISA_files/Universal-Federated-Analytics-Min.js.download" id="_fed_an_ua_tag"></script>
+<script src="./#StopRansomware_ MedusaLocker _ CISA_files/js_Ju2kv0be9nSaC75_tCJQ0lcqX-1yP9ybB5Jv7MIucz8.js.download"></script>
+
+  
+
+<table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 175px; display: none; top: 86px; position: absolute; left: 1268px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><table cellspacing="0" cellpadding="0" role="presentation" class="gstl_51 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
