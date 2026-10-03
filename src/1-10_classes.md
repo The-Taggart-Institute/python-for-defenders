@@ -338,3 +338,118 @@ Role: administrator
 This is how we can create variations of complicated objects that share significant amounts of structure.
 
 There's some art to thinking in objects when writing code, and not everyone agrees on the best ways to do it. Some people avoid it altogether and stick to writing lots of composed functions. But when a problem naturally fits into object-shaped patterns, you should have the tools to express those ideas clearly, and to make distinctions between super and sub-classes of objects.
+
+## Real World Application: The `Indicator` Class
+
+We're going to practice with one more class design, this time pulled directly from the cybersecurity world: indicators of compromise (IoCs).
+
+Atomic indicators of compromise like URLs, domain names, and IP addresses are not always high-fidelity, but will be routinely available and worth using in many situations. They're the easiest to block, even if they're also the easiest for the attackers to change up. Sharing these can be a little tricky because we have safety standards concerning "defanging" these indicators. For example, a URL will have its scheme modified and the last dot of the domain bracketed to prevent accidental clicking. So `https://taggartinstitute.org` becomes `hxxps://taggartinstitute[.]org`.
+
+To represent indicators in Python, we'll make a base `Indicator` class, then 3 subclasses for `IPv4Indicator`, `URLIndicator`, and `DomainIndicator`. We'll also create a `defang()` method that may be handy for safely passing indicators around to teammates and documentation.
+
+To start, let's build the base class.
+
+
+```python
+class Indicator:
+  """
+  Atomic Indicators of Compromise.
+  
+  Parameters
+  ----------
+  
+  value: str
+      Value of indicator
+  """
+  
+  def __init__(self, value):
+    self.value: str = value
+      
+  def defang(self) -> str:
+    """
+    Defangs the indicator
+    
+    Implemented in subclasses
+    """
+    pass
+```
+
+Not a lot going on, but it's a start. Note that we have `pass` for the `defang()` method. This is Python for "Haven't done this yet," which is fine for our base class. 
+Now let's build one of our subclasses.
+
+To properly inherit, not only will we need to add something to our `class` line, but we'll also need to take advantage of the built-in `super()` function, which returns the parent class. From there, we can access its `__init__()` constructor and pass in our own constructor's arguments to inherit properties without reinventing them.
+
+We can also properly implement `defang()` on our child class in a way that's appropriate for IPv4s.
+
+### Defanging IPv4
+
+Let's think about this for a moment. It would be simple to just replace every `.` with `[.]` in the value, but that's not actually what the convention is! To refang every dot would be a huge pain. Instead, we just want to bracket the *last* dot. How to do that?
+
+Well, strings have two methods that can help: `.find()` and `.index()`, which both return the earliest index of a given substring. Of course, we want the latest index, not the earliest. The solution? Reverse the string, find the first dot, replace it, and reverse it again.
+
+It sounds more complicated than it is.
+
+```python
+# Notice the parens? Parens for Parents!
+class IPv4Indicator(Indicator):
+    
+  def __init__(self, value):
+    # Instantiate parent properties/methods
+    super().__init__(value)
+      
+  # Overwrite the `defang()` method for our purposes
+  def defang(self) -> str:
+    """
+    Defangs the indicator
+    
+    Brackets the dots
+    """
+    
+    # Reverse the value
+    rev = self.value[::-1]
+    # Find the first dot — Errors out if none
+    dot_idx = rev.index(".")
+    # Reassemble the string with slicing. Take until the dot, add the defanged dot, then add the rest
+    # of the address. Note we have to flip the brackets for the reversing, and the second slice
+    # starts *after* the existing dot
+    defanged_rev = rev[:dot_idx] + "].[" + rev[dot_idx+1:] 
+    # Reverse the reverse for the final return
+    return defanged_rev[::-1]
+```
+
+```python
+i = IPv4Indicator("1.2.3.4")
+i.defang()
+```
+
+Let's do one more together, then it's up to you. We'll do `DomainIndicator`.
+
+```python
+class DomainIndicator(Indicator):
+    
+  def __init__(self, value):
+    # Instantiate parent properties/methods
+    super().__init__(value)
+      
+  # Overwrite the `defang()` method for our purposes
+  def defang(self) -> str:
+    """
+    Defangs the indicator
+  
+    Brackets the dots
+    """
+
+    # Yeah, domain defanging and IPv4 defanging are the same, basically.
+    # Reverse the value
+    rev = self.value[::-1]
+    # Find the first dot — Errors out if none
+    dot_idx = rev.index(".")
+    # Reassemble the string with slicing. Take until the dot, add the defanged dot, then add the rest
+    # of the address. Note we have to flip the brackets for the reversing, and the second slice
+    # starts *after* the existing dot
+    defanged_rev = rev[:dot_idx] + "].[" + rev[dot_idx+1:] 
+    # Reverse the reverse for the final return
+    return defanged_rev[::-1]
+```
+
+Can you complete a `URLIndicator` yourself? 
