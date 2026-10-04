@@ -31,7 +31,7 @@
 
 # 3: Working With Files
 
-- [3-1: Opening Files](3-2_opening-files.md)
+- [3-1: Opening Files](3-1_opening-files.md)
 - [3-2: CSVs](3-2_csvs.md)
 - [3-3: JSON](3-3_json.md)
 - [3-4: Regular Expressions](3-4_regex.md)
