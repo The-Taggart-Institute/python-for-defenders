@@ -51,7 +51,7 @@ As always, this will make more sense in context. We use the readers and writers 
 # Get data with a basic reader()
 
 with open("ransomware_iocs.csv") as f:
-    iocs = [row for row in csv.reader(f)]
+  iocs = [row for row in csv.reader(f)]
 
 # Check out the first 10
 iocs[0:10]
@@ -68,7 +68,7 @@ Now let's see how `DictReader` works.
 ```python
 # Get data with a DictReader()
 with open("ransomware_iocs.csv") as f:
-    iocs = [row for row in csv.DictReader(f)]
+  iocs = [row for row in csv.DictReader(f)]
 
 # Check out the first 10
 iocs[0:10]
@@ -93,11 +93,11 @@ Let's create some test data in both shapes to play with.
 # Create sandbox data
 
 ship_list: [list] = [
-    ["Name", "Registry", "Class"],
-    ["Enterprise", "NCC-1701", "Constitution"],
-    ["Reliant", "NCC-1864", "Miranda"],
-    ["Voyager", "NCC-74656", "Intrepid"],
-    ["Discovery", "NCC-1034", "Crossfield"] 
+  ["Name", "Registry", "Class"],
+  ["Enterprise", "NCC-1701", "Constitution"],
+  ["Reliant", "NCC-1864", "Miranda"],
+  ["Voyager", "NCC-74656", "Intrepid"],
+  ["Discovery", "NCC-1034", "Crossfield"] 
 ]
 
 # If you think I'm writing that out twice you're crazy
@@ -113,8 +113,8 @@ Okay, let's write these out.
 # First, with the writer()
 
 with open("ships.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerows(ship_list)
+  writer = csv.writer(f)
+  writer.writerows(ship_list)
     
 # And check the results
 ! cat ships.csv
@@ -129,13 +129,13 @@ Additionally, if you want the header present, you need to separately call `.writ
 # Now with DictWriter()
 
 with open("ships.csv", "w") as f:
-    # Get fieldnames from the first element
-    fieldnames = ship_dict[0].keys()
-    # Notice the named arg
-    writer = csv.DictWriter(f, fieldnames=fieldnames)
-    # Write the header, then the wrows
-    writer.writeheader()
-    writer.writerows(ship_dict)
+  # Get fieldnames from the first element
+  fieldnames = ship_dict[0].keys()
+  # Notice the named arg
+  writer = csv.DictWriter(f, fieldnames=fieldnames)
+  # Write the header, then the wrows
+  writer.writeheader()
+  writer.writerows(ship_dict)
     
 # And check the results
 ! cat ships.csv
