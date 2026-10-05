@@ -12,6 +12,7 @@ certifi==2026.6.17
 cffi==2.0.0
 charset-normalizer==3.4.7
 comm==0.2.3
+cryptography==50.0.2
 debugpy==1.8.21
 decorator==5.3.1
 defusedxml==0.7.1
@@ -55,13 +56,17 @@ nbclient==0.11.0
 nbconvert==7.17.1
 nbformat==5.10.4
 nest-asyncio2==1.7.2
+notebook==7.6.0
 notebook-shim==0.2.4
 numpy==2.5.0
 packaging==26.2
 pandas==3.0.3
 pandocfilters==1.5.1
 parso==0.8.7
+pdfminer-six==20260107
+pdfplumber==0.11.10
 pexpect==4.9.0
+pillow==12.3.0
 platformdirs==4.10.0
 plotly==6.8.0
 prometheus-client==0.25.0
@@ -71,6 +76,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.3
 pycparser==3.0
 pygments==2.20.0
+pypdfium2==5.14.0
 python-dateutil==2.9.0.post0
 python-json-logger==4.1.0
 pyyaml==6.0.3
