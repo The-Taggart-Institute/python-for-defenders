@@ -12,6 +12,7 @@ dependencies = [
     "jldracula>=0.2.0",
     "jupyterlab>=4.6.0",
     "jupyterlab-myst>=2.7.0",
+    "lxml>=6.1.3",
     "nest-asyncio>=1.6.0",
     "notebook>=7.6.0",
     "numpy>=2.5.0",

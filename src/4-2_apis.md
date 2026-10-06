@@ -170,7 +170,3 @@ r.sandbox_verdicts
 ```
 
 Handy, right? That is much easier than navigating a ton of `dict`s
-
-## Check For Understanding
-
-No auto test for this. Use this Notebook to experiment with the VirusTotal API (and async)! Check domains and IPs while getting comfortable with these objects. When you're ready, move on to the next lesson, where we'll scrape web content manually!
