@@ -106,6 +106,7 @@ rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
 rpds-py==2026.5.1
+scapy==2.8.0
 send2trash==2.1.0
 six==1.17.0
 soupsieve==2.8.4

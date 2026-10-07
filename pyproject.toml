@@ -24,6 +24,7 @@ dependencies = [
     "plotly>=6.8.0",
     "pydig>=0.4.0",
     "requests>=2.34.2",
+    "scapy>=2.8.0",
     "vt-py>=0.22.0",
     "wappalyzer>=2.0.4",
 ]
