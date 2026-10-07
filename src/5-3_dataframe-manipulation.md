@@ -154,7 +154,7 @@ external_queries[["source_ip", "query"]]
 
 So obviously there's still some noise there. We don't really need to see the `microsoft.com` queries.
 
-We have the ability to combine masks with boolean-like operators, although they work differently than normal Python `and` abd`or`. Instead, inside the square braces, we use the bitwse `&` and `|`.
+We have the ability to combine masks with boolean-like operators, although they work differently than normal Python `and` and `or`. Instead, inside the square braces, we use the bitwise `&` and `|`.
 
 Let's add a negation for ending in `microsoft.com` to our mask.
 
