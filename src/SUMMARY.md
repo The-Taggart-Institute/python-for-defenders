@@ -55,6 +55,6 @@
 
 - [6-1: Visualization](6-1_visualization.md)
 - [6-2: Advanced Visualization](6-2_advanced_visualization.md)
-- [6-3: Marimo](6-3_marimo.md)
+- [6-3: Reporting](6-3_reporting.md)
 
 [Exhibition of Mastery](exhibition-of-mastery.md)
