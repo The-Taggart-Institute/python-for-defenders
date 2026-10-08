@@ -21,6 +21,7 @@
 - [1-9: Functions](1-9_functions.md)
 - [1-10: Classes](1-10_classes.md)
 - [1-11: Modules](1-11_modules.md)
+- [1-12: Errors](1-12_errors.md)
 
 # 2: Using Jupyter
 
