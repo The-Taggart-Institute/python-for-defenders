@@ -1,3 +1,0 @@
-example.com
-192.168.9.10
-https://example.com

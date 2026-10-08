@@ -1,1 +1,0 @@
-# Exhibition of Mastery
