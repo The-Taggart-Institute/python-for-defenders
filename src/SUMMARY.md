@@ -4,9 +4,8 @@
 # 0: Welcome
 
 - [0-1: Welcome and Introduction](0-1_welcome.md)
-- [0-2: Do I Need to Learn to Code?](0-2_do-i-need-to-learn-to-code.md)
-- [0-3: Why Notebooks?](0-3_why-notebooks.md)
-- [0-4: Environment Setup](0-4_setup.md)
+- [0-2: Why Notebooks?](0-3_why-notebooks.md)
+- [0-3: Environment Setup](0-4_setup.md)
 
 # 1: Python Basics
 
