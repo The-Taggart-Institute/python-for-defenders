@@ -1,5 +1,7 @@
 # Python For Defenders
 
+![banner](img/banner.jpeg)
+
 Python for Defenders: Code, Detect, Defend.
 
 ## License/Copyright
@@ -27,5 +29,6 @@ cd python-for-defenders
 
 ## Changelog
 
-- **2026-03-12:** Update dependencies
-- **2022-09-21:** Added Usage; fixed test for 1-2. 
+- **2026-10-07**: Complete rewrite and unification of parts 1 and 2
+- **2026-03-12:**: Update dependencies
+- **2022-09-21:**: Added Usage; fixed test for 1-2. 
