@@ -1,0 +1,4 @@
+[submodule "pages"]
+	path = pages
+	url = git@codeberg.org:The-Taggart-Institute/python-for-defenders
+	branch = pages
