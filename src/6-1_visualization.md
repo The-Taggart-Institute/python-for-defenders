@@ -125,6 +125,8 @@ But worry not, there's a solution: we can `reset_index()` to make the Index a Ra
 event_counts.reset_index().plot.bar(x="event_id", y="pid")
 ```
 
+![](img/6-1_chart-0.png)
+
 We made a thing! It could be prettier, but it's a chart nonetheless. `matplotlib` defaults aren't too shabby. In the next lesson we'll go over some more advanced graphing libraries, but there's more we can do to make this helpful. For one thing, every chart needs a title. Also, can we do something about those axes labels? Basic middle school science stuff.
 
 The easiest way to make these modifications is to save the chart to a variable and work with it there. You can see above the chart that this is an `AxesSubplot` object. Commonly we'll name `Axes` objects `ax`. We can actually set the title with an argument to `plot.bar()`, but the label and the legend need methods on the axes.
@@ -137,6 +139,8 @@ ax.set_ylabel("Event Count")
 ax.legend(["Events"])
 
 ```
+
+![](img/6-1_chart-1.png)
 
 Much better! Now that we have the basics down, let's split our `DataFrame` a bit more to examine our data.
 
@@ -173,6 +177,8 @@ ax.set_xlabel("Image")
 ax.set_ylabel("Execution Count")
 ax.legend(["Executions"])
 ```
+
+![](img/6-1_chart-2.png)
 
 Which way did you tilt your head to look at that—left or right? The answer says a lot about you!
 
@@ -217,6 +223,8 @@ ax.set_ylabel("Conn. Count")
 ax.legend(["Connections"])
 ```
 
+![](img/6-1_chart-3.png)
+
 Now that we have an overview, we can dive in on the points of interest in the dataset.
 
 ## Zooming In on Processes of Interest
@@ -235,6 +243,8 @@ ax.set_ylabel("Event Count")
 ax.legend(["Events"])
 ```
 
+![](img/6-1_chart-4.png)
+
 So a few process execs, a lot of network activity, some file writes? and a massive amount of registry activity. That's not exactly uncommon, but worth noting.
 
 It's important to see that there are in fact network connections. To what?
@@ -251,6 +261,8 @@ ax.set_ylabel("Conn. Count")
 ax.legend(["Beacon.exe"])
 ```
 
+![](img/6-1_chart-5.png)
+
 ```python
 ax = beacon_exe[beacon_exe.event_id == 3] \
   .groupby("dest_port") \
@@ -261,6 +273,8 @@ ax.set_xlabel("Dest Port")
 ax.set_ylabel("Conn. Count")
 ax.legend(["Beacon.exe"])
 ```
+
+![](img/6-1_chart-6.png)
 
 Mostly on 443. Unsurprising, but that does mean we may have one other bit of data to grab: DNS, aka Event ID 22.
 
