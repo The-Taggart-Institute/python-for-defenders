@@ -1,4 +1,4 @@
- 2-2: Widgets
+# 2-2: Widgets
 
 Notebooks are a kind of application. Granted, they don't have a traditional user interface, but in every other sense, they are an app: code repeatedly used by a person to perform a task, structured an organized for usability.
 
