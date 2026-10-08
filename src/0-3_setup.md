@@ -1,4 +1,4 @@
-# 0-4: Environment Setup
+# 0-3: Environment Setup
 
 Let's prepare our environment for Python programming. Python is cross-platform, and so are our setup instructions. You can perform this setup on Linux, macOS, or Windows.Even BSD will be fine! However, I *strongly* encourage a Unix-like operating system as the base. As mentioned in the [Intro](0-1_welcome.md#required-materials), I would use Windows Subsystem for Linux if you're on a Windows OS to easily get started in a Linux environment. Regardless of your OS choice, our first setup task is to install `uv`.
 

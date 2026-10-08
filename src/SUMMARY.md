@@ -4,8 +4,8 @@
 # 0: Welcome
 
 - [0-1: Welcome and Introduction](0-1_welcome.md)
-- [0-2: Why Notebooks?](0-3_why-notebooks.md)
-- [0-3: Environment Setup](0-4_setup.md)
+- [0-2: Why Notebooks?](0-2_why-notebooks.md)
+- [0-3: Environment Setup](0-3_setup.md)
 
 # 1: Python Basics
 

@@ -1,4 +1,4 @@
-# 0-3: Why Notebooks?
+# 0-2: Why Notebooks?
 
 There are a couple questions worth answering before we get underway.
 
